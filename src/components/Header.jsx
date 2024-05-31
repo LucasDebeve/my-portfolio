@@ -1,4 +1,5 @@
-import {useState} from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import DarkModeSwitcher from "./DarkModeSwitcher";
@@ -7,6 +8,8 @@ import NavButton from "./NavButton.jsx";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { t } = useTranslation("global");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -29,10 +32,10 @@ function Header() {
       <nav
         className={`${isMenuOpen ? "block" : "hidden"} sm:block fixed top-24 bottom-2 w-11/12 sm:bottom-auto sm:top-3 sm:w-auto bg-slate-100/50 px-5 py-2 rounded-2xl sm:rounded-full backdrop-blur-sm drop-shadow-sm border border-b-0 border-slate-50/50 dark:bg-neutral-800/50 dark:border-slate-50/20`}>
         <ul className="w-full h-full flex flex-col sm:flex-row justify-around sm:justify-center gap-5 items-center">
-          <NavButton>Accueil</NavButton>
-          <NavButton>Compétences</NavButton>
-          <NavButton>Expériences</NavButton>
-          <NavButton>Réalisations</NavButton>
+          <NavButton>{t("header.home")}</NavButton>
+          <NavButton>{t("header.skills")}</NavButton>
+          <NavButton>{t("header.xp")}</NavButton>
+          <NavButton>{t("header.projects")}</NavButton>
           {isMenuOpen && <li className="flex gap-12">
             <LanguageSwitcher/>
             <DarkModeSwitcher/>

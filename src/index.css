@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Manrope:wght@200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+}
 
 .hero-gradient {
     background: radial-gradient(#ffff, #e2e2e2);
 }
 
-.dark > .hero-gradient {
+.dark .hero-gradient {
     background: radial-gradient(#4E4E4E, #1d1d1d);
 }

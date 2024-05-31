@@ -2,12 +2,13 @@ import PropTypes from "prop-types";
 import {useTranslation} from "react-i18next";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
-function LanguageButton({code, name}) {
+function LanguageButton({code, name, after}) {
 
   const {t, i18n} = useTranslation("global");
 
   const changeLanguage = () => {
     i18n.changeLanguage(code).then(() => {});
+    after();
   };
 
   return (
@@ -23,6 +24,7 @@ function LanguageButton({code, name}) {
 LanguageButton.propTypes = {
   code: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  after: PropTypes.func,
 }
 
 export default LanguageButton;

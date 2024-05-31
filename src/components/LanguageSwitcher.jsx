@@ -3,12 +3,15 @@ import {faGlobe} from "@fortawesome/free-solid-svg-icons";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import languages from "../locales/languages.json";
 import LanguageButton from "./LanguageButton.jsx";
+import {useState} from "react";
 
 
 function LanguageSwitcher() {
 
-  const toggleLanguageMenu = () => {
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
 
+  const toggleLanguageMenu = () => {
+    setIsLanguageMenuOpen(!isLanguageMenuOpen);
   }
 
   return (
@@ -21,9 +24,9 @@ function LanguageSwitcher() {
       </button>
       {/* dropdown menu*/}
       <div
-        className="absolute top-12 right-10 w-52 bg-slate-100/50 rounded-2xl backdrop-blur-sm drop-shadow-sm border border-b-0 border-slate-50/50 dark:bg-neutral-800/50 dark:text-gray-300 dark:border-slate-50/20">
+        className={`${isLanguageMenuOpen ? "block" : "hidden"} absolute top-12 right-10 w-52 bg-slate-100/50 rounded-2xl backdrop-blur-sm drop-shadow-sm border border-b-0 border-slate-50/50 dark:bg-neutral-800/50 dark:text-gray-300 dark:border-slate-50/20`}>
         {languages.map((lang, i) => (
-          <LanguageButton key={`${lang}-${i}`} code={lang.code} name={lang.name}/>
+          <LanguageButton key={`${lang}-${i}`} code={lang.code} name={lang.name} after={() => setIsLanguageMenuOpen(false)}/>
         ))
         }
       </div>

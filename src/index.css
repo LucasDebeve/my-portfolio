@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-gradient {
+    background: radial-gradient(#ffff, #e2e2e2);
+}
+
+.dark > .hero-gradient {
+    background: radial-gradient(#4E4E4E, #1d1d1d);
+}

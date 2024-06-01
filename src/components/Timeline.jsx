@@ -58,6 +58,7 @@ function Timeline({ leftMargin, rightMargin}) {
   };
 
   const colors = ["bg-blue-500", "bg-red-500", "bg-green-500", "bg-amber-500"];
+  const darkColors = ["dark:bg-blue-300", "dark:bg-red-300", "dark:bg-green-300", "dark:bg-amber-200"];
 
   return (<>
       <h2 className="text-2xl text-gray-800 dark:text-gray-300">{t("xp.title")}</h2>
@@ -71,6 +72,7 @@ function Timeline({ leftMargin, rightMargin}) {
           };
 
           const color = colors[index % colors.length];
+          const darkColor = darkColors[index % darkColors.length];
 
           return (
             <div key={index} style={itemStyle}>
@@ -87,7 +89,7 @@ function Timeline({ leftMargin, rightMargin}) {
                   {`${item.duration.months > 1 ? `${item.duration.months} ${t("general.months")}` : (item.duration.months === 0 ? '' : `${item.duration.months} ${t("general.month")}`)}`}
                 </span>
               </p>
-              <div className={`h-1.5 ${color} w-full rounded-full`}>
+              <div className={`h-1.5 ${color} w-full rounded-full ${darkColor}`}>
               </div>
             </div>
           );

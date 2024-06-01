@@ -60,8 +60,8 @@ function Timeline({ leftMargin, rightMargin}) {
   const colors = ["bg-blue-500", "bg-red-500", "bg-green-500", "bg-amber-500"];
 
   return (<>
-      <h2 className="text-2xl">{t("xp.title")}</h2>
-      <div className="grid overflow-x-auto" style={containerStyle}>
+      <h2 className="text-2xl text-gray-800 dark:text-gray-300">{t("xp.title")}</h2>
+      <div className="grid overflow-x-auto text-gray-800 dark:text-gray-300" style={containerStyle}>
         {data.map((item, index) => {
           const itemStyle = {
             gridColumnStart: nbMonthsBetween(firstDate, item.dateDeb) + 1,
@@ -75,8 +75,8 @@ function Timeline({ leftMargin, rightMargin}) {
           return (
             <div key={index} style={itemStyle}>
               <p className="text-lg">{item.title}</p>
-              <p className="text-sm text-gray-600 whitespace-nowrap">{item.description}</p>
-              <p className="text-sm text-gray-600 whitespace-nowrap pb-2">
+              <p className="text-sm text-gray-600 whitespace-nowrap dark:text-gray-400">{item.description}</p>
+              <p className="text-sm text-gray-600 whitespace-nowrap pb-2 dark:text-gray-400">
                 <span>
                   {`${item.duration.years > 1 ? `${item.duration.years} ${t("general.years")}` : (item.duration.years === 0 ? '' : `${item.duration.years} ${t("general.year")}`)}`}
                 </span>
@@ -96,7 +96,7 @@ function Timeline({ leftMargin, rightMargin}) {
         <div style={{
           gridArea: `${data.length + 1} / 1 / ${data.length + 2} / ${maxMonths + 1}`,
         }}>
-          <div className="w-full h-1 bg-neutral-700 rounded-full"></div>
+          <div className="w-full h-1 bg-neutral-700 rounded-full dark:bg-neutral-400"></div>
         </div>
         {/* Timeline dates */}
         {Array.from({length: maxMonths}, (_, i) => {

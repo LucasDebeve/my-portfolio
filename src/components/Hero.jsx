@@ -41,7 +41,7 @@ function Hero() {
       >
         Hello world !
       </motion.p>
-      <a href="#" className="absolute bottom-8 animate-bounce">
+      <a href="#tabs" className="absolute bottom-8 animate-bounce">
         <FontAwesomeIcon icon={faChevronDown} className="mr-5"/>
         En savoir plus
         <FontAwesomeIcon icon={faChevronDown} className="ml-5"/>

@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import {useState} from "react";
 import {useTranslation} from "react-i18next";
 
-function Timeline({ leftMargin, rightMargin, id}) {
+function Timeline({ leftMargin, rightMargin, id, tab}) {
 
-  const {t} = useTranslation("global");
+  const {t} = useTranslation([tab, "global"]);
   const data = t("xp.timeline", {returnObjects: true});
 
   const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 640px)").matches);
@@ -80,13 +80,13 @@ function Timeline({ leftMargin, rightMargin, id}) {
               <p className="text-sm text-gray-600 whitespace-nowrap dark:text-gray-400">{item.description}</p>
               <p className="text-sm text-gray-600 whitespace-nowrap pb-2 dark:text-gray-400">
                 <span>
-                  {`${item.duration.years > 1 ? `${item.duration.years} ${t("general.years")}` : (item.duration.years === 0 ? '' : `${item.duration.years} ${t("general.year")}`)}`}
+                  {`${item.duration.years > 1 ? `${item.duration.years} ${t("general.years", {ns: "global"})}` : (item.duration.years === 0 ? '' : `${item.duration.years} ${t("general.year", {ns: "global"})}`)}`}
                 </span>
                 <span>
-                  {`${item.duration.years > 0 && item.duration.months > 0 ? ` ${t("general.and")} ` : ''}`}
+                  {`${item.duration.years > 0 && item.duration.months > 0 ? ` ${t("general.and", {ns: "global"})} ` : ''}`}
                 </span>
                 <span>
-                  {`${item.duration.months > 1 ? `${item.duration.months} ${t("general.months")}` : (item.duration.months === 0 ? '' : `${item.duration.months} ${t("general.month")}`)}`}
+                  {`${item.duration.months > 1 ? `${item.duration.months} ${t("general.months", {ns: "global"})}` : (item.duration.months === 0 ? '' : `${item.duration.months} ${t("general.month", {ns: "global"})}`)}`}
                 </span>
               </p>
               <div className={`h-1.5 ${color} w-full rounded-full ${darkColor}`}>
@@ -112,7 +112,7 @@ function Timeline({ leftMargin, rightMargin, id}) {
               gridColumn: i + 1,
               gridRow: data.length + 2,
             }}>
-              {date.toLocaleString(`${t("lang")}-${t("country")}`, {month: "short"})} {date.getFullYear()}
+              {date.toLocaleString(`${t("lang", {ns: "global"})}-${t("country", {ns: "global"})}`, {month: "short"})} {date.getFullYear()}
             </div>
           );
         })}
@@ -131,6 +131,7 @@ Timeline.propTypes = {
     dateFin: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
   })),
+  tab: PropTypes.string,
 };
 
 Timeline.defaultProps = {

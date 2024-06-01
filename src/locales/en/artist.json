@@ -1,0 +1,35 @@
+{
+  "aboutMe": {
+    "firstParagraph": "I'm Lucas Debeve, a 3rd year student in computer science. After studying at an engineering school specialising in aerospace, I'm now working as a computer science teacher.",
+    "secondParagraph": "I've had a passion for computing since I was 13, and started out by developing games and personal websites. Today, I develop many web applications, each responding to a specific need. I also design data visualization dashboards, previously collected and transformed."
+  },
+  "xp": {
+    "title": "Experience",
+    "timeline": [
+      {
+        "title": "Activity Leader",
+        "description": "CCGPF, CGCV",
+        "dateDeb": "04/01/2022",
+        "dateFin": "now"
+      },
+      {
+        "title": "Grape Picker",
+        "description": "Hermonville, 51220 - 2 seasons",
+        "dateDeb": "09/01/2022",
+        "dateFin": "09/01/2022"
+      },
+      {
+        "title": "BAFA Trainer",
+        "description": "UFCV",
+        "dateDeb": "12/26/2023",
+        "dateFin": "now"
+      },
+      {
+        "title": "Trainee developer",
+        "description": "Rectorat de Reims",
+        "dateDeb": "04/07/2024",
+        "dateFin": "06/01/2024"
+      }
+    ]
+  }
+}

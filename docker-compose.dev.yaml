@@ -10,4 +10,4 @@ services:
         - .:/app
         - /app/node_modules
     ports:
-        - "3001:5173"
+        - "5173:5173"

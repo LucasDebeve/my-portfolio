@@ -3,7 +3,8 @@ ENV NODE_ENV=development
 
 WORKDIR /app
 
-COPY package*.json .
+COPY package.json .
+COPY package-lock.json .
 
 RUN set -eux; \
     npm install;

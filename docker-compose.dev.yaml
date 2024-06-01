@@ -7,7 +7,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-        - ./src:/app/src
-        - ./public:/app/public
+        - .:/app
     ports:
         - "3000:3000"

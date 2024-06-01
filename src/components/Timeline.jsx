@@ -1,7 +1,17 @@
 import PropTypes from "prop-types";
 import {useState} from "react";
+import {useTranslation} from "react-i18next";
 
-function Timeline({data}) {
+function Timeline({ leftMargin, rightMargin}) {
+
+  const {t} = useTranslation("global");
+  const data = t("xp.timeline", {returnObjects: true});
+
+  const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 640px)").matches);
+
+  window.matchMedia("(max-width: 640px)").addEventListener("change", (e) => {
+    setIsMobile(e.matches);
+  });
 
   data.sort((a, b) => {
     return new Date(b.dateDeb) - new Date(a.dateDeb);
@@ -9,6 +19,8 @@ function Timeline({data}) {
 
   const firstDate = new Date(data[data.length - 1].dateDeb);
 
+  // Apply left margin
+  firstDate.setMonth(firstDate.getMonth() - leftMargin);
 
   const nbMonthsBetween = (date1, date2) => {
     if (typeof date1 === "string") date1 = new Date(date1);
@@ -17,7 +29,8 @@ function Timeline({data}) {
     return (date2.getFullYear() - date1.getFullYear()) * 12 + date2.getMonth() - date1.getMonth();
   };
 
-  const maxMonths = nbMonthsBetween(firstDate, new Date());
+  // Apply right margin
+  const maxMonths = nbMonthsBetween(firstDate, new Date()) + rightMargin;
 
   data.map((item) => {
     item.dateDeb = new Date(item.dateDeb);
@@ -27,7 +40,7 @@ function Timeline({data}) {
       item.dateFin = new Date(item.dateFin);
     }
     item.duration = {
-      years: item.dateFin.getFullYear() - item.dateDeb.getFullYear(),
+      years: Math.floor(nbMonthsBetween(item.dateDeb, item.dateFin) / 12),
       months: nbMonthsBetween(item.dateDeb, item.dateFin) % 12,
     }
 
@@ -39,36 +52,76 @@ function Timeline({data}) {
 
   const containerStyle = {
     gridTemplateColumns: `repeat(${maxMonths}, ${100 / maxMonths}%)`,
-    gridTemplateRows: `repeat(${data.length} + 2, 1fr)`,
+    gridTemplateRows: `repeat(${data.length} + 3, 1fr)`,
     gridRowGap: "1rem",
+    gridColumnGap: "0",
   };
 
-  return (
-    <div className={`grid`} style={containerStyle}>
-      {data.map((item, index) => {
-        console.log(`titre: ${item.title}`)
-        const itemStyle = {
-          gridColumnStart: nbMonthsBetween(firstDate, item.dateDeb) + 1,
-          gridColumn: (nbMonthsBetween(firstDate, item.dateDeb) + 1) + " / " + (nbMonthsBetween(firstDate, item.dateFin) + 1),
-          gridRowStart: index + 1,
-          gridRowEnd: index + 2,
-        };
+  const colors = ["bg-blue-500", "bg-red-500", "bg-green-500", "bg-amber-500"];
 
-        return (
-          <div key={index} style={itemStyle}>
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-            <p className="w-max">{item.dateDeb} - {item.dateFin}</p>
-            <p>{`${item.duration.years > 1 ? `${item.duration.years} années` : (item.duration.years === 0 ? '' : `${item.duration.years} an`)}${item.duration.years > 0 && item.duration.months > 0 ? ' et ' : ''}${item.duration.months > 0 ? `${item.duration.months} mois` : ''}`}</p>
-            <div className="h-1 bg-blue-500 w-full rounded-full">
+  return (<>
+      <h2 className="text-2xl">{t("xp.title")}</h2>
+      <div className="grid overflow-x-auto" style={containerStyle}>
+        {data.map((item, index) => {
+          const itemStyle = {
+            gridColumnStart: nbMonthsBetween(firstDate, item.dateDeb) + 1,
+            gridColumn: (nbMonthsBetween(firstDate, item.dateDeb) + 1) + " / " + (nbMonthsBetween(firstDate, item.dateFin) + 1),
+            gridRowStart: index + 1,
+            gridRowEnd: index + 2,
+          };
+
+          const color = colors[index % colors.length];
+
+          return (
+            <div key={index} style={itemStyle}>
+              <p className="text-lg">{item.title}</p>
+              <p className="text-sm text-gray-600 whitespace-nowrap">{item.description}</p>
+              <p className="text-sm text-gray-600 whitespace-nowrap pb-2">
+                <span>
+                  {`${item.duration.years > 1 ? `${item.duration.years} ${t("general.years")}` : (item.duration.years === 0 ? '' : `${item.duration.years} ${t("general.year")}`)}`}
+                </span>
+                <span>
+                  {`${item.duration.years > 0 && item.duration.months > 0 ? ` ${t("general.and")} ` : ''}`}
+                </span>
+                <span>
+                  {`${item.duration.months > 1 ? `${item.duration.months} ${t("general.months")}` : (item.duration.months === 0 ? '' : `${item.duration.months} ${t("general.month")}`)}`}
+                </span>
+              </p>
+              <div className={`h-1.5 ${color} w-full rounded-full`}>
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </div>);
+          );
+        })}
+        {/* Timeline arrow */}
+        <div style={{
+          gridArea: `${data.length + 1} / 1 / ${data.length + 2} / ${maxMonths + 1}`,
+        }}>
+          <div className="w-full h-1 bg-neutral-700 rounded-full"></div>
+        </div>
+        {/* Timeline dates */}
+        {Array.from({length: maxMonths}, (_, i) => {
+          let k;
+          isMobile ? k = 12 : k = 4;
+          if (i % k !== 0) return null;
+          const date = new Date(firstDate);
+          date.setMonth(date.getMonth() + i);
+          return (
+            <div key={i} className="text-center" style={{
+              gridColumn: i + 1,
+              gridRow: data.length + 2,
+            }}>
+              {date.toLocaleString(`${t("lang")}-${t("country")}`, {month: "short"})} {date.getFullYear()}
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
 }
 
 Timeline.propTypes = {
+  leftMargin: PropTypes.number,
+  rightMargin: PropTypes.number,
   data: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
     dateDeb: PropTypes.string.isRequired,
@@ -78,6 +131,8 @@ Timeline.propTypes = {
 };
 
 Timeline.defaultProps = {
+  leftMargin: 0,
+  rightMargin: 0,
   data: [{
     title: "Title2", dateDeb: "05/01/2022", dateFin: "now", description: "Description",
   }, {
@@ -85,8 +140,8 @@ Timeline.defaultProps = {
   }, {
     title: "Title3", dateDeb: "01/01/2023", dateFin: "01/01/2024", description: "Description",
   }, {
-    title: "Title4", dateDeb: "01/08/2023", dateFin: "01/10/2023", description: "Description",
-  } ],
+    title: "Title4", dateDeb: "08/01/2023", dateFin: "now", description: "Description",
+  }],
 };
 
 

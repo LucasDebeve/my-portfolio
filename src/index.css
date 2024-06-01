@@ -19,3 +19,25 @@ h1, h2, h3, h4, h5, h6 {
 .dark .hero-gradient {
     background: radial-gradient(#4E4E4E, #1d1d1d);
 }
+
+.container-lg {
+    width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .container-lg {
+        max-width: 640px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-lg {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-lg {
+        max-width: 1024px;
+    }
+}

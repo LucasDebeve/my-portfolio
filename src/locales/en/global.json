@@ -1,8 +1,46 @@
 {
+  "lang": "en",
+  "country": "GB",
   "header": {
     "home": "Home",
     "skills": "Skills",
     "xp": "Experiences",
     "projects": "Projects"
+  },
+  "xp": {
+    "title": "Experience",
+    "timeline": [
+      {
+        "title": "Activity Leader",
+        "description": "CCGPF, CGCV",
+        "dateDeb": "04/01/2022",
+        "dateFin": "now"
+      },
+      {
+        "title": "Grape Picker",
+        "description": "Hermonville, 51220 - 2 seasons",
+        "dateDeb": "09/01/2022",
+        "dateFin": "09/01/2022"
+      },
+      {
+        "title": "BAFA Trainer",
+        "description": "UFCV",
+        "dateDeb": "12/26/2023",
+        "dateFin": "now"
+      },
+      {
+        "title": "Trainee developer",
+        "description": "Rectorat de Reims",
+        "dateDeb": "04/07/2024",
+        "dateFin": "06/01/2024"
+      }
+    ]
+  },
+  "general": {
+    "years": "years",
+    "year": "year",
+    "and": "and",
+    "months": "months",
+    "month": "month"
   }
 }

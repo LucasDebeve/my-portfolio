@@ -1,8 +1,46 @@
 {
+  "lang": "fr",
+  "country": "FR",
   "header": {
     "home": "Accueil",
     "skills": "Compétences",
     "xp": "Expériences",
     "projects": "Réalisations"
+  },
+  "xp": {
+    "title": "Expériences professionnelles",
+    "timeline": [
+      {
+        "title": "Animateur socioculturel",
+        "description": "CCGPF, CGCV",
+        "dateDeb": "04/01/2022",
+        "dateFin": "now"
+      },
+      {
+        "title": "Vendangeur",
+        "description": "Hermonville, 51220 - 2 saisons",
+        "dateDeb": "09/01/2022",
+        "dateFin": "09/01/2022"
+      },
+      {
+        "title": "Formateur BAFA",
+        "description": "UFCV",
+        "dateDeb": "12/26/2023",
+        "dateFin": "now"
+      },
+      {
+        "title": "Développeur stagiaire",
+        "description": "Rectorat de Reims",
+        "dateDeb": "04/07/2024",
+        "dateFin": "06/01/2024"
+      }
+    ]
+  },
+  "general": {
+    "years": "ans",
+    "year": "an",
+    "and": "et",
+    "months": "mois",
+    "month": "mois"
   }
 }

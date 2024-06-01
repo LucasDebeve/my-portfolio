@@ -5,7 +5,7 @@ services:
     image: app-dev-i
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     volumes:
         - .:/app
     ports:

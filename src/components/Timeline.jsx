@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import {useState} from "react";
 import {useTranslation} from "react-i18next";
 
-function Timeline({ leftMargin, rightMargin}) {
+function Timeline({ leftMargin, rightMargin, id}) {
 
   const {t} = useTranslation("global");
   const data = t("xp.timeline", {returnObjects: true});
@@ -61,7 +61,7 @@ function Timeline({ leftMargin, rightMargin}) {
   const darkColors = ["dark:bg-blue-300", "dark:bg-red-300", "dark:bg-green-300", "dark:bg-amber-200"];
 
   return (<>
-      <h2 className="text-2xl text-gray-800 dark:text-gray-300">{t("xp.title")}</h2>
+      <h2 className="text-2xl scroll-mt-16 text-gray-800 dark:text-gray-300" id={id}>{t("xp.title")}</h2>
       <div className="grid overflow-x-auto text-gray-800 dark:text-gray-300" style={containerStyle}>
         {data.map((item, index) => {
           const itemStyle = {
@@ -124,6 +124,7 @@ function Timeline({ leftMargin, rightMargin}) {
 Timeline.propTypes = {
   leftMargin: PropTypes.number,
   rightMargin: PropTypes.number,
+  id: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
     dateDeb: PropTypes.string.isRequired,
@@ -135,6 +136,7 @@ Timeline.propTypes = {
 Timeline.defaultProps = {
   leftMargin: 0,
   rightMargin: 0,
+  id: "timeline",
   data: [{
     title: "Title2", dateDeb: "05/01/2022", dateFin: "now", description: "Description",
   }, {

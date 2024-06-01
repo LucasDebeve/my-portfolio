@@ -12,3 +12,9 @@ RUN set -eux; \
 RUN set-eux; \
     npm run build;
 
+# Nginx server
+FROM nginx:1.25.4-alpine as react_nginx
+
+WORKDIR /usr/share/nginx/html
+
+COPY --from=react_build /usr/src/project/dist /usr/share/nginx/html

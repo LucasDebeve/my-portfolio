@@ -5,27 +5,34 @@ import Container from "./components/Container";
 import {useTranslation} from "react-i18next";
 import Columns from "./components/Columns.jsx";
 import TabsList from "./components/Tabs/TabsList.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 function App() {
+
+  const [tabs, setTabs] = useState([
+    {reference: "developer", active: true},
+    {reference: "artist", active: false},
+  ]);
 
   const [ tab, setTab ] = useState("developer");
 
   // eslint-disable-next-line no-unused-vars
   const {t} = useTranslation(tab);
 
+  useEffect(() => {
+    setTabs(tabs.map((pan) => {
+      pan.active = pan.reference === tab;
+      return pan;
+    }));
+  }, [tab]);
+
   return (
     <>
       <Header tab={tab}/>
       <Hero/>
       <Container>
-        <TabsList tabs={
-          [
-            {reference: "developer", active: true},
-            {reference: "artist"},
-          ]
-        } changeTab={setTab} id="tabs"/>
+        <TabsList tabs={tabs} changeTab={setTab} id="tabs"/>
         <Columns>
           <img src="/img/Code%20typing.svg"/>
           <div className="text-sm my-auto">

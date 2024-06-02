@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-function Container({ children, className = ""}) {
+function Container({ children, className = "", id = ""}) {
   return (
-    <div className={`container-lg mx-auto px-4 overflow-hidden flex flex-col py-8 gap-8 ${className}`}
+    <div className={`container-lg overflow-clip mx-auto px-4 flex flex-col py-8 gap-8 ${className}`} id={id}
          style={{
            transitionProperty: "max-width",
            transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
@@ -15,6 +15,7 @@ function Container({ children, className = ""}) {
 Container.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default Container;

@@ -35,25 +35,96 @@
   "skills": {
     "title": "Skills",
     "list" : [
-      {"title":  "SQL", "src":  "/img/skills/sql.png"},
-      {"title":  "PostgreSQL", "src":  "/img/skills/postgres.svg"},
-      {"title":  "Maria DB", "src":  "/img/skills/mariadb.png"},
-      {"title":  "Oracle", "src":  "/img/skills/oracle.png"},
-      {"title":  "Python", "src":  "/img/skills/python.png"},
-      {"title":  "Flask", "src":  "/img/skills/flask.png"},
-      {"title":  "Django", "src":  "/img/skills/django.png"},
-      {"title":  "Power BI", "src":  "/img/skills/powerbi.png"},
-      {"title":  "Grafana", "src":  "/img/skills/grafana.svg"},
-      {"title":  "Figma", "src":  "/img/skills/figma.svg"},
-      {"title":  "React", "src":  "/img/skills/react.png"},
-      {"title":  "Docker", "src":  "/img/skills/docker.webp"},
-      {"title":  "Javascript", "src":  "/img/skills/js.png"},
-      {"title":  "API Platform", "src":  "/img/skills/api-platform.png"},
-      {"title":  "Git", "src":  "/img/skills/git.png"},
-      {"title":  "PHP", "src":  "/img/skills/php.png"},
-      {"title":  "Symfony", "src":  "/img/skills/symfony.png"},
-      {"title":  "HTML", "src":  "/img/skills/html.webp"},
-      {"title":  "CSS", "src":  "/img/skills/css.webp"}
+      {"title":  "SQL", "src":  "/img/skills/sql.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PostgreSQL", "src":  "/img/skills/postgres.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Maria DB", "src":  "/img/skills/mariadb.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Python", "src":  "/img/skills/python.png", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Oracle", "src":  "/img/skills/oracle.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Power BI", "src":  "/img/skills/powerbi.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Django", "src":  "/img/skills/django.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Flask", "src":  "/img/skills/flask.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Grafana", "src":  "/img/skills/grafana.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Figma", "src":  "/img/skills/figma.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "React", "src":  "/img/skills/react.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Docker", "src":  "/img/skills/docker.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Javascript", "src":  "/img/skills/js.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "API Platform", "src":  "/img/skills/api-platform.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Git", "src":  "/img/skills/git.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PHP", "src":  "/img/skills/php.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Symfony", "src":  "/img/skills/symfony.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "HTML", "src":  "/img/skills/html.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "CSS", "src":  "/img/skills/css.webp", "rowSpan":  false, "colSpan":  false}
+    ]
+  },
+  "projects": {
+    "title": "Réalisations",
+    "list": [
+      {
+        "title": "Uranus",
+        "description": "This web application is an e-learning platform that enables students to follow courses online. Teachers can publish teaching sequences, exercises and projects for their students. Students can then follow the lessons, complete the exercises and projects and obtain marks.",
+        "links": [
+          {"title":  "Source code", "url": "https://github.com/LucasDebeve/Uranus", "disabled": false, "primary": true},
+          {"title":  "See more", "url": "", "disabled": true, "primary": false}
+        ],
+        "date": "In progress",
+        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "React", "Javascript", "Git"],
+        "image": "/img/projects/uranus.png"
+      },
+      {
+        "title": "In The Air",
+        "description": "During this team project, we spent several months gathering, transforming and analyzing data from Air France flights departing from Paris-Charles de Gaulle airport, as well as meteorological data from Météo France. Using interactive dashboards, we linked flight delays and cancellations at this airport with meteorological parameters such as wind, precipitation and frost.",
+        "links": [
+          {"title":  "Source code", "url": "", "disabled": true, "primary": true},
+          {"title":  "See more", "url": "https://grafana.bayfield.dev/d/ddfyybob20w00c/airfrance?orgId=1&refresh=10s", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Grafana", "Python", "Docker", "Power BI", "Maria DB", "SQL", "Git"],
+        "image": "/img/projects/intheair.png"
+      },
+      {
+        "title": "Mercury Cloud",
+        "description": "This web platform is a personal cloud interface that lets me store and share my files. I developed this application to meet a personal need for file storage.",
+        "links": [
+          {"title":  "Source code", "url": "https://github.com/LucasDebeve/media-share", "disabled": false, "primary": true},
+          {"title":  "See more", "url": "https://media.lucasdebeve.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Python", "Flask", "Docker", "CSS", "Tailwind CSS", "Git"],
+        "image": "/img/projects/mercury.png"
+      },
+      {
+        "title": "Amorti'Sœur",
+        "description": "This web application is a bank loan simulation tool. Users can simulate a loan by entering the amount, term and interest rate. The application then returns the monthly instalments, the total cost of the loan and the amortisation table.",
+        "links": [
+          {"title":  "Source code", "url": "https://github.com/LucasDebeve/amortisSoeur", "disabled": false, "primary": true},
+          {"title":  "See more", "url": "https://lucasdebeve.github.io/amortisSoeur/", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/amortisseur.png"
+      },
+      {
+        "title": "Studease",
+        "description": "As part of a university project, my team and I developed a web application that allows students to apply for work experience and sandwich courses advertised by companies. Students can also track the progress of their applications and get feedback from companies.",
+        "links": [
+          {"title":  "Source code", "url": "https://github.com/LucasDebeve/studease", "disabled": true, "primary": true},
+          {"title":  "See more", "url": "", "disabled": true, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Symfony", "PHP", "Docker", "Maria DB", "Git"],
+        "image": "/img/projects/studease.png"
+      },
+      {
+        "title": "OuafNotes",
+        "description": "This web application is a report card simulation tool for students at the Reims-Châlons-Charleville IUT. Grades are dynamically retrieved from the IUT intranet and displayed on a report card. Students can then view their grades, their average and check that their year has been validated.",
+        "links": [
+          {"title":  "Source code", "url": "https://github.com/LucasDebeve/ouaf-notes", "disabled": false, "primary": true},
+          {"title":  "See more", "url": "https://ouafnotes.lucasdebeve.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/ouafnotes.png"
+      }
     ]
   }
 }

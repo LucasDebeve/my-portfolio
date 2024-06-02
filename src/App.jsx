@@ -8,9 +8,20 @@ import TabsList from "./components/Tabs/TabsList.jsx";
 import {useEffect, useState} from "react";
 import BentoGrid from "./components/Bento/BentoGrid.jsx";
 import BentoCell from "./components/Bento/BentoCell.jsx";
+import FiltersList from "./components/Filters/FiltersList.jsx";
 
 
 function App() {
+
+  const [ filters, setFilters ] = useState([]);
+
+  const updateFilters = (filter) => {
+    if (filters.includes(filter)) {
+      setFilters(filters.filter((f) => f !== filter));
+    } else {
+      setFilters([...filters, filter]);
+    }
+  };
 
   const [tabs, setTabs] = useState([
     {reference: "developer", active: true},
@@ -51,13 +62,19 @@ function App() {
         <BentoGrid title={t("skills.title")}>
           {t("skills.list", {returnObjects: true}).map((skill, index) => {
             return (
-              <BentoCell key={index} rowSpan={skill.rowSpan} colSpan={skill.colSpan} src={skill.src}>
+              <BentoCell
+                key={index}
+                rowSpan={skill.rowSpan}
+                colSpan={skill.colSpan}
+                src={skill.src}
+                updateFilters={updateFilters}>
                 {skill.title}
               </BentoCell>
             )
           })
           }
         </BentoGrid>
+        <FiltersList filters={filters}/>
       </Container>
       <div className="h-svh"></div>
     </>

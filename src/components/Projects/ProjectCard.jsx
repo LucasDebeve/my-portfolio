@@ -25,7 +25,7 @@ function ProjectCard({project}) {
           {project.links.map((link, index) => {
               return (
                 <a href={link.url} key={`${project.title}-link-${index}`} target="_blank" rel="noreferrer"
-                   className={`w-full lg:w-auto text-center py-1 px-6 rounded-sm transition-colors ${link.primary ? "text-gray-300 bg-neutral-700 hover:text-gray-100 hover:bg-neutral-600" : "bg-neutral-200 text-neutral-700 border border-neutral-700 hover:text-neutral-900 hover:bg-neutral-300"}`}>
+                   className={`w-full lg:w-auto text-center py-1 px-6 rounded-sm transition-colors ${link.primary ? "text-gray-300 bg-neutral-700 hover:text-gray-100 hover:bg-neutral-600" : "bg-neutral-200 text-neutral-700 border border-neutral-700 hover:text-neutral-900 hover:bg-neutral-300"} ${link.disabled && "pointer-events-none"} ${link.disabled && link.primary && "bg-neutral-400 text-neutral-500"} ${link.disabled && !link.primary && "border-neutral-400 text-neutral-400"}`}>
                   {link.title}
                 </a>
               );

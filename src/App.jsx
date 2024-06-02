@@ -6,6 +6,8 @@ import {useTranslation} from "react-i18next";
 import Columns from "./components/Columns.jsx";
 import TabsList from "./components/Tabs/TabsList.jsx";
 import {useEffect, useState} from "react";
+import BentoGrid from "./components/Bento/BentoGrid.jsx";
+import BentoCell from "./components/Bento/BentoCell.jsx";
 
 
 function App() {
@@ -46,6 +48,16 @@ function App() {
           </div>
         </Columns>
         <Timeline leftMargin={2} rightMargin={2} tab={tab}/>
+        <BentoGrid title={t("skills.title")}>
+          {t("skills.list", {returnObjects: true}).map((skill, index) => {
+            return (
+              <BentoCell key={index} rowSpan={skill.rowSpan} colSpan={skill.colSpan} src={skill.src}>
+                {skill.title}
+              </BentoCell>
+            )
+          })
+          }
+        </BentoGrid>
       </Container>
       <div className="h-svh"></div>
     </>

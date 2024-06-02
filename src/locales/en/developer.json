@@ -31,5 +31,29 @@
         "dateFin": "06/01/2024"
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "list" : [
+      {"title":  "SQL", "src":  "/img/skills/sql.png"},
+      {"title":  "PostgreSQL", "src":  "/img/skills/postgres.svg"},
+      {"title":  "Maria DB", "src":  "/img/skills/mariadb.png"},
+      {"title":  "Oracle", "src":  "/img/skills/oracle.png"},
+      {"title":  "Python", "src":  "/img/skills/python.png"},
+      {"title":  "Flask", "src":  "/img/skills/flask.png"},
+      {"title":  "Django", "src":  "/img/skills/django.png"},
+      {"title":  "Power BI", "src":  "/img/skills/powerbi.png"},
+      {"title":  "Grafana", "src":  "/img/skills/grafana.svg"},
+      {"title":  "Figma", "src":  "/img/skills/figma.svg"},
+      {"title":  "React", "src":  "/img/skills/react.png"},
+      {"title":  "Docker", "src":  "/img/skills/docker.webp"},
+      {"title":  "Javascript", "src":  "/img/skills/js.png"},
+      {"title":  "API Platform", "src":  "/img/skills/api-platform.png"},
+      {"title":  "Git", "src":  "/img/skills/git.png"},
+      {"title":  "PHP", "src":  "/img/skills/php.png"},
+      {"title":  "Symfony", "src":  "/img/skills/symfony.png"},
+      {"title":  "HTML", "src":  "/img/skills/html.webp"},
+      {"title":  "CSS", "src":  "/img/skills/css.webp"}
+    ]
   }
 }

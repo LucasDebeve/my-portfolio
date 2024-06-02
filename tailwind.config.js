@@ -6,6 +6,9 @@ export default {
   ],
   darkMode: 'class',
   theme: {
+    screen: {
+      'mobile': {'max': '1023'},
+    },
     extend: {},
   },
   plugins: [],

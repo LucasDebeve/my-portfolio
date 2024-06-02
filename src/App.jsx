@@ -9,6 +9,7 @@ import {useEffect, useState} from "react";
 import BentoGrid from "./components/Bento/BentoGrid.jsx";
 import BentoCell from "./components/Bento/BentoCell.jsx";
 import FiltersList from "./components/Filters/FiltersList.jsx";
+import ProjectsList from "./components/Projects/ProjectsList.jsx";
 
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
           }
         </BentoGrid>
         <FiltersList filters={filters}/>
+        <ProjectsList projects={t("projects.list", {returnObjects: true})} filters={filters}/>
       </Container>
       <div className="h-svh"></div>
     </>

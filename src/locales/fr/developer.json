@@ -55,5 +55,76 @@
       {"title":  "HTML", "src":  "/img/skills/html.webp", "rowSpan":  false, "colSpan":  false},
       {"title":  "CSS", "src":  "/img/skills/css.webp", "rowSpan":  false, "colSpan":  false}
     ]
+  },
+  "projects": {
+    "title": "Réalisations",
+    "list": [
+      {
+        "title": "Uranus",
+        "description": "Cet application web est une plateforme d'e-learning permettant à des élèves de suivres de cours en ligne. Les professeurs peuvent publié des séquences pédagogiques, des exercices et des projets pour les élèves. Ces derniers peuvent alors suivre les cours, réaliser les exercices et les projets et obtenir des notes.",
+        "links": [
+          {"title":  "Code source", "url": "", "disabled": false, "primary": true},
+          {"title":  "En voir plus", "url": "", "disabled": true, "primary": false}
+        ],
+        "date": "En cours",
+        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "React", "Javascript", "Git"],
+        "image": "/img/projects/uranus.png"
+      },
+      {
+        "title": "In The Air",
+        "description": "Durant ce projet en équipe, nous avons pendant plusieurs mois récupéré, transformé et analysé des données de vols Air France au départ de l'aéroport Paris-Charles de Gaulle ainsi que les données de météorologique de Météo France. Grâce au dashboards intéractifs conçus, nous avons mis en relation les retards et annulation des vols de cet aéroport avec les paramètres météorolgiques tels que le vent, les précipitation et le gel.",
+        "links": [
+          {"title":  "Code source", "url": "", "disabled": false, "primary": true},
+          {"title":  "En voir plus", "url": "", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Grafana", "Python", "Docker", "Power BI", "Maria DB", "SQL", "Git"],
+        "image": "/img/projects/intheair.png"
+      },
+      {
+        "title": "Mercury Cloud",
+        "description": "Cette plateforme web est une interface cloud personnel me permettant de stocker mes fichiers, et de les partager. J'ai développé cette application pour répondre à un besoin personnel de stockage de fichiers.",
+        "links": [
+          {"title":  "Code source", "url": "", "disabled": false, "primary": true},
+          {"title":  "En voir plus", "url": "", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Python", "Flask", "Docker", "CSS", "Tailwind CSS", "Git"],
+        "image": "/img/projects/mercury.png"
+      },
+      {
+        "title": "Amorti'Sœur",
+        "description": "Cette application web est un outil de simulation de prêt bancaire. L'utilisateur peut simuler un prêt en renseignant le montant, la durée et le taux d'intérêt. L'application lui retourne alors le montant des mensualités, le coût total du prêt et le tableau d'amortissement.",
+        "links": [
+          {"title":  "Code source", "url": "", "disabled": false, "primary": true},
+          {"title":  "En voir plus", "url": "", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/amortisseur.png"
+      },
+      {
+        "title": "Studease",
+        "description": "Dans le cadre d'un projet universitaire, j'ai développé avec mon équipe une application web permettant aux étudiants de postuler à des offres de stages et d'alternance publiées par des entreprises. Les étudiants peuvent également suivre l'avacement de leur candidature et obtenir des retours des entreprises.",
+        "links": [
+          {"title":  "Code source", "url": "", "disabled": true, "primary": true},
+          {"title":  "En voir plus", "url": "", "disabled": false, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Symfony", "PHP", "Docker", "Maria DB", "Git"],
+        "image": "/img/projects/studease.png"
+      },
+      {
+        "title": "OuafNotes",
+        "description": "Cette application web est un outil de simulation de bulletin universitaire pour les étudiants de l'IUT de Reims-Châlons-Charleville. Les notes sont dynamiquement récupérées depuis l'Intranet de l'IUT et affichées dans un bulletin de notes. L'étudiant peut alors visualiser ses notes, sa moyenne et vérifier sa validation d'année.",
+        "links": [
+          {"title":  "Code source", "url": "", "disabled": false, "primary": true},
+          {"title":  "En voir plus", "url": "", "disabled": false, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/amortisseur.png"
+      }
+    ]
   }
 }

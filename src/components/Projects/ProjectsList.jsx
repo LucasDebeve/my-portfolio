@@ -1,26 +1,31 @@
 import PropTypes from "prop-types";
 import ProjectCard from "./ProjectCard.jsx";
 import {useEffect, useState} from "react";
+import {AnimatePresence} from "framer-motion";
 
-function ProjectsList({ projects, filters = []}) {
+function ProjectsList({projects, filters = []}) {
 
   const [projectsList, setProjectsList] = useState(projects);
 
-  useEffect(() => {
-    if (filters.length > 0) {
-      setProjectsList(projects.filter((project) => {
-        return project.skills.some((skill) => filters.includes(skill));
-      }));
-    } else {
-      setProjectsList(projects);
-    }
-  }, [filters, projects]);
+  // useEffect(() => {
+  //   if (filters.length > 0) {
+  //     setProjectsList(projects.filter((project) => {
+  //       return project.skills.some((skill) => filters.includes(skill));
+  //     }));
+  //   } else {
+  //     setProjectsList(projects);
+  //   }
+  // }, [filters, projects]);
 
   return (
     <div className="flex flex-col gap-8">
-      {projectsList.map((project, index) => {
+      {projects.map((project, index) => {
         return (
-          <ProjectCard project={project} key={index} />
+          <AnimatePresence key={index}>
+            {(filters.length === 0 || project.skills.some((skill) => filters.includes(skill))) && (
+              <ProjectCard project={project}/>
+            )}
+          </AnimatePresence>
         );
       })}
     </div>

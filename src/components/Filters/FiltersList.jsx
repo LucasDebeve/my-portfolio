@@ -3,7 +3,6 @@ import FilterItem from "./FilterItem.jsx";
 import {AnimatePresence} from "framer-motion";
 
 function FiltersList({ selectFilters = [], totalFilters = []}) {
-  console.log(selectFilters, totalFilters);
   return (
     <div className="flex flex-row flex-wrap gap-4 min-h-2">
         {totalFilters.map((filter, index) => {

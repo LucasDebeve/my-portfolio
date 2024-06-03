@@ -15,8 +15,6 @@ function ProjectsList({projects, filters = []}) {
     }
     , []);
 
-  console.log(filters);
-
   return (
     <>
       <FiltersList selectFilters={filters} totalFilters={allSkills}/>

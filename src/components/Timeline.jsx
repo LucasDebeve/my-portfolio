@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import {useState} from "react";
 import {useTranslation} from "react-i18next";
 
-function Timeline({ leftMargin, rightMargin, id, tab}) {
+function Timeline({ leftMargin = 0, rightMargin = 0, id = "", tab = "xp" }) {
 
   const {t} = useTranslation([tab, "global"]);
   const data = t("xp.timeline", {returnObjects: true});
@@ -133,21 +133,5 @@ Timeline.propTypes = {
   })),
   tab: PropTypes.string,
 };
-
-Timeline.defaultProps = {
-  leftMargin: 0,
-  rightMargin: 0,
-  id: "timeline",
-  data: [{
-    title: "Title2", dateDeb: "05/01/2022", dateFin: "now", description: "Description",
-  }, {
-    title: "Title", dateDeb: "01/01/2021", dateFin: "01/01/2023", description: "Description",
-  }, {
-    title: "Title3", dateDeb: "01/01/2023", dateFin: "01/01/2024", description: "Description",
-  }, {
-    title: "Title4", dateDeb: "08/01/2023", dateFin: "now", description: "Description",
-  }],
-};
-
 
 export default Timeline;

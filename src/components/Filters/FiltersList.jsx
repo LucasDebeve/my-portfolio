@@ -4,7 +4,7 @@ import {AnimatePresence} from "framer-motion";
 
 function FiltersList({ selectFilters = [], totalFilters = []}) {
   return (
-    <div className="flex flex-row flex-wrap gap-4 min-h-2">
+    <div className="flex flex-row flex-wrap items-start gap-4 min-h-10">
         {totalFilters.map((filter, index) => {
           return (
             <AnimatePresence key={`filter-${index}`}>

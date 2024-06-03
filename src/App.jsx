@@ -21,7 +21,6 @@ function App() {
     } else {
       setFilters([...filters, filter]);
     }
-    console.log(filters);
   };
 
   const [tabs, setTabs] = useState([

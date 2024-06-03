@@ -2,22 +2,24 @@ import PropTypes from "prop-types";
 import FilterItem from "./FilterItem.jsx";
 import {AnimatePresence} from "framer-motion";
 
-function FiltersList({ filters }) {
+function FiltersList({ selectFilters = [], totalFilters = []}) {
+  console.log(selectFilters, totalFilters);
   return (
-    <div className="flex flex-row flex-wrap gap-4 h-2">
-      <AnimatePresence>
-        {filters.map((filter, index) => {
+    <div className="flex flex-row flex-wrap gap-4 min-h-2">
+        {totalFilters.map((filter, index) => {
           return (
-            <FilterItem key={`filter-${index}`} filter={filter}/>
+            <AnimatePresence key={`filter-${index}`}>
+              {selectFilters.includes(filter) && (<FilterItem filter={filter} />)}
+            </AnimatePresence>
           )
         })}
-      </AnimatePresence>
     </div>
   );
 }
 
 FiltersList.propTypes = {
-  filters: PropTypes.array,
+  selectFilters: PropTypes.array,
+  totalFilters: PropTypes.array,
 };
 
 export default FiltersList;

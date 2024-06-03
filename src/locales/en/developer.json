@@ -34,6 +34,7 @@
   },
   "skills": {
     "title": "Skills",
+    "twoRows": false,
     "list" : [
       {"title":  "SQL", "src":  "/img/skills/sql.png", "rowSpan":  false, "colSpan":  false},
       {"title":  "PostgreSQL", "src":  "/img/skills/postgres.svg", "rowSpan":  false, "colSpan":  false},

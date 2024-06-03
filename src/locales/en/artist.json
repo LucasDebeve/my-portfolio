@@ -31,5 +31,79 @@
         "dateFin": "06/01/2024"
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "twoRows": true,
+    "list" : [
+      {"title":  "Premiere Pro", "src":  "/img/skills/sql.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "After Effect", "src":  "/img/skills/postgres.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "DaVinci Resolve", "src":  "/img/skills/mariadb.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Hitfilm", "src":  "/img/skills/python.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Video editing and postproduction", "src":  "/img/skills/oracle.png", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Directing", "src":  "/img/skills/powerbi.png", "rowSpan":  true, "colSpan":  false},
+      {"title":  "Sound recording", "src":  "/img/skills/django.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "Lightroom", "src":  "/img/skills/flask.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photoshop", "src":  "/img/skills/grafana.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Cameraman", "src":  "/img/skills/figma.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photography", "src":  "/img/skills/react.png", "rowSpan":  false, "colSpan":  false}
+    ]
+  },
+  "projects": {
+    "title": "Directings",
+    "list": [
+      {
+        "title": "Oppenheimer 2 Feat Christopher Nolan",
+        "description": "Mystery project in production. More information to follow.",
+        "links": [
+          {"title":  "The film", "url": "", "disabled": true, "primary": true}
+        ],
+        "date": "In progress",
+        "skills": ["Directing", "Premiere Pro", "Video editing and postproduction", "Photography"],
+        "image": "/img/projects/intheair.png"
+      },
+      {
+        "title": "Talion - TurboFilm Festival",
+        "description": "As part of the Turbofilm festival organised by the SUAC of the University of Reims Champagne, I was lucky enough to be part of the Talion film team. The festival gives students the chance to make a 5-minute short film in just 24 hours. Based on the themes of time and conviviality, our film is called Talion.",
+        "links": [
+          {"title":  "The film", "url": "https://www.youtube.com/watch?v=IfU38Na4w6k&t", "disabled": false, "primary": true},
+          {"title":  "The festival", "url": "https://turbofilm-festival.univ-reims.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "mars 2024",
+        "skills": ["Sound recording", "Premiere Pro", "Video editing and postproduction", "Cameraman"],
+        "image": "/img/projects/intheair.png"
+      },
+      {
+        "title": "Expectations Vs Realities - BUT Informatique",
+        "description": "As part of the ‘Je filme ma formation’ (I film my training) festival, I worked with my team to create a film to present my training, i.e. the Computer Science degree at the IUT in Reims. The video was inspired by videos such as ‘Dreams VS Reality’ or ‘Ads VS Reality’. The film lasts 3 minutes and compares received ideas about computing and university with reality.",
+        "links": [
+          {"title":  "The film", "url": "https://www.youtube.com/watch?v=ZspYbFuXOMk", "disabled": false, "primary": true},
+          {"title":  "The festival", "url": "https://jefilmemaformation.tv/", "disabled": false, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Cameraman", "Premiere Pro", "Video editing and postproduction", "Directing"],
+        "image": "/img/projects/intheair.png"
+      },
+      {
+        "title": "Gomu-Gomu No Mi & Ope-Ope No Mi",
+        "description": "Inspired by the One Piece universe, I decided to decorate my library with replicas of the demon fruits of this world. These sculptures are made from clay and painted in acrylic.",
+        "links": [
+        ],
+        "date": "2023",
+        "skills": ["Sculpture", "Peinture"],
+        "image": "/img/projects/intheair.png"
+      },
+      {
+        "title": "One Crunch Man",
+        "description": "As part of the ‘Je filme le métier qui me plaît’ festival, I was in charge of post-production and editing for my team's film. The aim of our film was to present the profession of video game developer through a testimonial. As The festivale imposed a time limit of 3 minutes, we chose to adopt a trailer or teaser style.",
+        "links": [
+          {"title":  "The film", "url": "https://www.youtube.com/watch?v=yY4Ad0UQ7A0", "disabled": false, "primary": true},
+          {"title":  "The festival", "url": "https://jefilmelemetierquimeplait.tv/", "disabled": false, "primary": false}
+        ],
+        "date": "2022",
+        "skills": ["Directing", "Premiere Pro", "Video editing and postproduction"],
+        "image": "/img/projects/intheair.png"
+      }
+    ]
   }
 }

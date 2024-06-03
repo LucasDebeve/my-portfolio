@@ -16,15 +16,15 @@ function FilterItem({ filter, size = "text-sm" }) {
   };
 
   return (
-    <motion.div
+    <div
       className={`bg-gray-300 text-gray-800 ${size} dark:bg-neutral-800 dark:text-gray-300 py-1 px-4 rounded-full whitespace-nowrap`}
-      variants={animeVariants}
-      initial="hidden"
-      animate="visible"
-      exit="hidden"
+      // variants={animeVariants}
+      // initial="hidden"
+      // animate="visible"
+      // exit="hidden"
     >
       {filter}
-    </motion.div>
+    </div>
   );
 }
 

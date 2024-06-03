@@ -21,6 +21,7 @@ function App() {
     } else {
       setFilters([...filters, filter]);
     }
+    console.log(filters);
   };
 
   const [tabs, setTabs] = useState([
@@ -59,7 +60,7 @@ function App() {
           </div>
         </Columns>
         <Timeline leftMargin={2} rightMargin={2} tab={tab}/>
-        <BentoGrid title={t("skills.title")}>
+        <BentoGrid title={t("skills.title")} className={t("skills.twoRows") ? "lg:grid-rows-2" : "lg:grid-rows-3"}>
           {t("skills.list", {returnObjects: true}).map((skill, index) => {
             return (
               <BentoCell

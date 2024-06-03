@@ -5,9 +5,21 @@ import FiltersList from "../Filters/FiltersList.jsx";
 
 function ProjectsList({projects, filters = []}) {
 
+  const allSkills = projects.reduce((acc, project) => {
+      project.skills.forEach((skill) => {
+        if (!acc.includes(skill)) {
+          acc.push(skill);
+        }
+      });
+      return acc;
+    }
+    , []);
+
+  console.log(filters);
+
   return (
     <>
-      <FiltersList filters={filters} />
+      <FiltersList selectFilters={filters} totalFilters={allSkills}/>
       <div className="flex flex-col gap-8">
         {projects.map((project, index) => {
           return (

@@ -59,8 +59,8 @@ function App() {
             </p>
           </div>
         </Columns>
-        <Timeline leftMargin={2} rightMargin={2} tab={tab}/>
-        <BentoGrid title={t("skills.title")} className={t("skills.twoRows") ? "lg:grid-rows-2" : "lg:grid-rows-3"}>
+        <Timeline leftMargin={2} rightMargin={2} tab={tab} id="timeline"/>
+        <BentoGrid title={t("skills.title")} className={t("skills.twoRows") ? "lg:grid-rows-2" : "lg:grid-rows-3"} id="skills">
           {t("skills.list", {returnObjects: true}).map((skill, index) => {
             return (
               <BentoCell
@@ -75,7 +75,7 @@ function App() {
           })
           }
         </BentoGrid>
-        <ProjectsList projects={t("projects.list", {returnObjects: true})} filters={filters}/>
+        <ProjectsList projects={t("projects.list", {returnObjects: true})} filters={filters} title={t("projects.title")} id="projects" />
       </Container>
       <Footer authorText={t("author", {ns: "global"})} />
     </>

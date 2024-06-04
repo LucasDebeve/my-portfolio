@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard.jsx";
 import {AnimatePresence} from "framer-motion";
 import FiltersList from "../Filters/FiltersList.jsx";
 
-function ProjectsList({projects, filters = []}) {
+function ProjectsList({projects, filters = [], id = "", title = "Projects"}) {
 
   const allSkills = projects.reduce((acc, project) => {
       project.skills.forEach((skill) => {
@@ -18,6 +18,7 @@ function ProjectsList({projects, filters = []}) {
   return (
     <>
       <FiltersList selectFilters={filters} totalFilters={allSkills}/>
+      <h2 className="text-2xl scroll-mt-16 text-gray-800 dark:text-gray-300" id={id}>{title}</h2>
       <div className="flex flex-col gap-8">
         {projects.map((project, index) => {
           return (
@@ -49,6 +50,8 @@ ProjectsList.propTypes = {
     skills: PropTypes.arrayOf(PropTypes.string),
   })).isRequired,
   filters: PropTypes.arrayOf(PropTypes.string),
+  id: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default ProjectsList;

@@ -60,7 +60,7 @@
         ],
         "date": "In progress",
         "skills": ["Directing", "Premiere Pro", "Video editing and postproduction", "Photography"],
-        "image": "/img/projects/artist/intheair.png"
+        "image": "/img/projects/artist/talion.png"
       },
       {
         "title": "Talion - TurboFilm Festival",
@@ -71,7 +71,7 @@
         ],
         "date": "mars 2024",
         "skills": ["Sound recording", "Premiere Pro", "Video editing and postproduction", "Cameraman"],
-        "image": "/img/projects/artist/intheair.png"
+        "image": "/img/projects/artist/talion.jpg"
       },
       {
         "title": "Expectations Vs Realities - BUT Informatique",
@@ -82,7 +82,7 @@
         ],
         "date": "2023",
         "skills": ["Cameraman", "Premiere Pro", "Video editing and postproduction", "Directing"],
-        "image": "/img/projects/artist/intheair.png"
+        "image": "/img/projects/artist/attentes-vs-realites.jpg"
       },
       {
         "title": "Gomu-Gomu No Mi & Ope-Ope No Mi",
@@ -91,7 +91,7 @@
         ],
         "date": "2023",
         "skills": ["Sculpture", "Peinture"],
-        "image": "/img/projects/artist/intheair.png"
+        "image": "/img/projects/artist/gomu.jpg"
       },
       {
         "title": "One Crunch Man",
@@ -102,7 +102,7 @@
         ],
         "date": "2022",
         "skills": ["Directing", "Premiere Pro", "Video editing and postproduction"],
-        "image": "/img/projects/artist/intheair.png"
+        "image": "/img/projects/artist/one-crunch-man.png"
       }
     ]
   }

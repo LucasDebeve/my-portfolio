@@ -36,25 +36,25 @@
     "title": "Skills",
     "twoRows": false,
     "list" : [
-      {"title":  "SQL", "src":  "/img/skills/sql.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "PostgreSQL", "src":  "/img/skills/postgres.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Maria DB", "src":  "/img/skills/mariadb.png",  "rowSpan":  false, "colSpan":  false},
-      {"title":  "Python", "src":  "/img/skills/python.png", "rowSpan":  true, "colSpan":  true},
-      {"title":  "Oracle", "src":  "/img/skills/oracle.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Power BI", "src":  "/img/skills/powerbi.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Django", "src":  "/img/skills/django.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Flask", "src":  "/img/skills/flask.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Grafana", "src":  "/img/skills/grafana.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Figma", "src":  "/img/skills/figma.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "React", "src":  "/img/skills/react.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Docker", "src":  "/img/skills/docker.webp", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Javascript", "src":  "/img/skills/js.png", "rowSpan":  false, "colSpan":  true},
-      {"title":  "API Platform", "src":  "/img/skills/api-platform.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Git", "src":  "/img/skills/git.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "PHP", "src":  "/img/skills/php.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Symfony", "src":  "/img/skills/symfony.png", "rowSpan":  false, "colSpan":  true},
-      {"title":  "HTML", "src":  "/img/skills/html.webp", "rowSpan":  false, "colSpan":  false},
-      {"title":  "CSS", "src":  "/img/skills/css.webp", "rowSpan":  false, "colSpan":  false}
+      {"title":  "SQL", "src":  "/img/skills/developer/sql.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PostgreSQL", "src":  "/img/skills/developer/postgres.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Maria DB", "src":  "/img/skills/developer/mariadb.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Python", "src":  "/img/skills/developer/python.png", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Oracle", "src":  "/img/skills/developer/oracle.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Power BI", "src":  "/img/skills/developer/powerbi.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Django", "src":  "/img/skills/developer/django.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Flask", "src":  "/img/skills/developer/flask.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Grafana", "src":  "/img/skills/developer/grafana.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Figma", "src":  "/img/skills/developer/figma.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "React", "src":  "/img/skills/developer/react.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Docker", "src":  "/img/skills/developer/docker.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Javascript", "src":  "/img/skills/developer/js.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "API Platform", "src":  "/img/skills/developer/api-platform.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Git", "src":  "/img/skills/developer/git.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PHP", "src":  "/img/skills/developer/php.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Symfony", "src":  "/img/skills/developer/symfony.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "HTML", "src":  "/img/skills/developer/html.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "CSS", "src":  "/img/skills/developer/css.webp", "rowSpan":  false, "colSpan":  false}
     ]
   },
   "projects": {
@@ -69,7 +69,7 @@
         ],
         "date": "In progress",
         "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "Figma", "React", "Javascript", "Git"],
-        "image": "/img/projects/uranus.png"
+        "image": "/img/projects/developer/uranus.png"
       },
       {
         "title": "In The Air",
@@ -80,7 +80,7 @@
         ],
         "date": "2024",
         "skills": ["Grafana", "Python", "Docker", "Power BI", "Maria DB", "SQL", "Git"],
-        "image": "/img/projects/intheair.png"
+        "image": "/img/projects/developer/intheair.png"
       },
       {
         "title": "Mercury Cloud",
@@ -91,7 +91,7 @@
         ],
         "date": "2024",
         "skills": ["Python", "Flask", "Docker", "CSS", "Figma", "Tailwind CSS", "Git"],
-        "image": "/img/projects/mercury.png"
+        "image": "/img/projects/developer/mercury.png"
       },
       {
         "title": "Amorti'Sœur",
@@ -102,7 +102,7 @@
         ],
         "date": "2024",
         "skills": ["Javascript", "HTML", "CSS", "Git"],
-        "image": "/img/projects/amortisseur.png"
+        "image": "/img/projects/developer/amortisseur.png"
       },
       {
         "title": "Studease",
@@ -113,7 +113,7 @@
         ],
         "date": "2023",
         "skills": ["Symfony", "PHP", "Docker", "Maria DB", "Git"],
-        "image": "/img/projects/studease.png"
+        "image": "/img/projects/developer/studease.png"
       },
       {
         "title": "OuafNotes",
@@ -124,7 +124,7 @@
         ],
         "date": "2023",
         "skills": ["Javascript", "HTML", "CSS", "Git"],
-        "image": "/img/projects/ouafnotes.png"
+        "image": "/img/projects/developer/ouafnotes.png"
       }
     ]
   }

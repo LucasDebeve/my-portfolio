@@ -36,17 +36,17 @@
     "title": "Compétences",
     "twoRows": true,
     "list" : [
-      {"title":  "Premiere Pro", "src":  "/img/skills/sql.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "After Effect", "src":  "/img/skills/postgres.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "DaVinci Resolve", "src":  "/img/skills/mariadb.png",  "rowSpan":  false, "colSpan":  false},
-      {"title":  "Hitfilm", "src":  "/img/skills/python.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Montage et post-production", "src":  "/img/skills/oracle.png", "rowSpan":  true, "colSpan":  true},
-      {"title":  "Réalisation", "src":  "/img/skills/powerbi.png", "rowSpan":  true, "colSpan":  false},
-      {"title":  "Prise de son", "src":  "/img/skills/django.png", "rowSpan":  false, "colSpan":  true},
-      {"title":  "Lightroom", "src":  "/img/skills/flask.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Photoshop", "src":  "/img/skills/grafana.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Cadrage", "src":  "/img/skills/figma.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Photographie", "src":  "/img/skills/react.png", "rowSpan":  false, "colSpan":  false}
+      {"title":  "Premiere Pro", "src":  "/img/skills/artist/sql.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "After Effect", "src":  "/img/skills/artist/postgres.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "DaVinci Resolve", "src":  "/img/skills/artist/mariadb.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Hitfilm", "src":  "/img/skills/artist/python.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Montage et post-production", "src":  "/img/skills/artist/oracle.png", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Réalisation", "src":  "/img/skills/artist/powerbi.png", "rowSpan":  true, "colSpan":  false},
+      {"title":  "Prise de son", "src":  "/img/skills/artist/django.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "Lightroom", "src":  "/img/skills/artist/flask.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photoshop", "src":  "/img/skills/artist/grafana.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Cadrage", "src":  "/img/skills/artist/figma.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photographie", "src":  "/img/skills/artist/react.png", "rowSpan":  false, "colSpan":  false}
     ]
   },
   "projects": {
@@ -60,7 +60,7 @@
         ],
         "date": "En cours",
         "skills": ["Réalisation", "Premiere Pro", "Montage et post-production", "Photographie"],
-        "image": "/img/projects/intheair.png"
+        "image": "/img/projects/artist/intheair.png"
       },
       {
         "title": "Talion - Festival TurboFilm 2024",
@@ -71,7 +71,7 @@
         ],
         "date": "mars 2024",
         "skills": ["Prise de son", "Premiere Pro", "Montage et post-production", "Cadrage"],
-        "image": "/img/projects/intheair.png"
+        "image": "/img/projects/artist/intheair.png"
       },
       {
         "title": "Attentes Vs Réalités - BUT Informatique",
@@ -82,7 +82,7 @@
         ],
         "date": "2023",
         "skills": ["Cadrage", "Premiere Pro", "Montage et post-production", "Réalisation"],
-        "image": "/img/projects/intheair.png"
+        "image": "/img/projects/artist/intheair.png"
       },
       {
         "title": "Gomu-Gomu No Mi & Ope-Ope No Mi",
@@ -91,7 +91,7 @@
         ],
         "date": "2023",
         "skills": ["Sculpture", "Peinture"],
-        "image": "/img/projects/intheair.png"
+        "image": "/img/projects/artist/intheair.png"
       },
       {
         "title": "One Crunch Man",
@@ -102,7 +102,7 @@
         ],
         "date": "2022",
         "skills": ["Réalisation", "Premiere Pro", "Montage et post-production"],
-        "image": "/img/projects/intheair.png"
+        "image": "/img/projects/artist/intheair.png"
       }
     ]
   }

@@ -1,6 +1,7 @@
 {
   "lang": "fr",
   "country": "FR",
+  "author": "Développé par Lucas Debeve",
   "tabs": {
     "developer": "Mode Développeur",
     "artist": "Mode Artiste"

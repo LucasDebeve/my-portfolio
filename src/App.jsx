@@ -9,6 +9,7 @@ import {useEffect, useState} from "react";
 import BentoGrid from "./components/Bento/BentoGrid.jsx";
 import BentoCell from "./components/Bento/BentoCell.jsx";
 import ProjectsList from "./components/Projects/ProjectsList.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
   const [ tab, setTab ] = useState("developer");
 
   // eslint-disable-next-line no-unused-vars
-  const {t} = useTranslation(tab);
+  const {t} = useTranslation([tab, "global"]);
 
   useEffect(() => {
     setTabs(tabs.map((pan) => {
@@ -76,7 +77,7 @@ function App() {
         </BentoGrid>
         <ProjectsList projects={t("projects.list", {returnObjects: true})} filters={filters}/>
       </Container>
-      <div className="h-svh"></div>
+      <Footer authorText={t("author", {ns: "global"})} />
     </>
   )
 }

@@ -36,17 +36,17 @@
     "title": "Compétences",
     "twoRows": true,
     "list" : [
-      {"title":  "Premiere Pro", "src":  "/img/skills/artist/sql.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "After Effect", "src":  "/img/skills/artist/postgres.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "DaVinci Resolve", "src":  "/img/skills/artist/mariadb.png",  "rowSpan":  false, "colSpan":  false},
-      {"title":  "Hitfilm", "src":  "/img/skills/artist/python.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Montage et post-production", "src":  "/img/skills/artist/oracle.png", "rowSpan":  true, "colSpan":  true},
-      {"title":  "Réalisation", "src":  "/img/skills/artist/powerbi.png", "rowSpan":  true, "colSpan":  false},
-      {"title":  "Prise de son", "src":  "/img/skills/artist/django.png", "rowSpan":  false, "colSpan":  true},
-      {"title":  "Lightroom", "src":  "/img/skills/artist/flask.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Photoshop", "src":  "/img/skills/artist/grafana.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Cadrage", "src":  "/img/skills/artist/figma.svg", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Photographie", "src":  "/img/skills/artist/react.png", "rowSpan":  false, "colSpan":  false}
+      {"title":  "Premiere Pro", "src":  "/img/skills/artist/premiere.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "After Effect", "src":  "/img/skills/artist/after-effect.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "DaVinci Resolve", "src":  "/img/skills/artist/davinci.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Hitfilm", "src":  "/img/skills/artist/hitfilm.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Montage et post-production", "src":  "/img/skills/artist/editing.svg", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Réalisation", "src":  "/img/skills/artist/directing.png", "rowSpan":  true, "colSpan":  false},
+      {"title":  "Prise de son", "src":  "/img/skills/artist/sound.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "Lightroom", "src":  "/img/skills/artist/lightroom.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photoshop", "src":  "/img/skills/artist/photoshop.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Cadrage", "src":  "/img/skills/artist/cameraman.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photographie", "src":  "/img/skills/artist/camera.svg", "rowSpan":  false, "colSpan":  false}
     ]
   },
   "projects": {

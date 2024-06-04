@@ -27,7 +27,7 @@ function ClickableImage({ src, alt }) {
 
   return (
     <>
-      <img src={src} alt={alt} className={`w-full h-32 object-cover md:h-full md:w-1/4 rounded-l-sm ${isOpen && "ring-2 ring-blue-500 ring-offset-2"} hover:cursor-pointer`} onClick={openImage}/>
+      <img src={src} alt={alt} className={`w-full h-32 object-cover md:h-auto md:w-1/4 rounded-l-sm ${isOpen && "ring-2 ring-blue-500 ring-offset-2"} hover:cursor-pointer`} onClick={openImage}/>
       <AnimatePresence>
         {isOpen && (
           <motion.div

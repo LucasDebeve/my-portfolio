@@ -36,17 +36,17 @@
     "title": "Skills",
     "twoRows": true,
     "list" : [
-      {"title":  "Premiere Pro", "src":  "/img/skills/premiere.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "After Effect", "src":  "/img/skills/after-effect.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "DaVinci Resolve", "src":  "/img/skills/davinci.png",  "rowSpan":  false, "colSpan":  false},
-      {"title":  "Hitfilm", "src":  "/img/skills/hitfilm.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Video editing and postproduction", "src":  "/img/skills/editing.svg", "rowSpan":  true, "colSpan":  true},
-      {"title":  "Directing", "src":  "/img/skills/directing.png", "rowSpan":  true, "colSpan":  false},
-      {"title":  "Sound recording", "src":  "/img/skills/sound.png", "rowSpan":  false, "colSpan":  true},
-      {"title":  "Lightroom", "src":  "/img/skills/lightroom.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Photoshop", "src":  "/img/skills/photoshop.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Cameraman", "src":  "/img/skills/cameraman.png", "rowSpan":  false, "colSpan":  false},
-      {"title":  "Photography", "src":  "/img/skills/camera.png", "rowSpan":  false, "colSpan":  false}
+      {"title":  "Premiere Pro", "src":  "/img/skills/artist/premiere.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "After Effect", "src":  "/img/skills/artist/after-effect.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "DaVinci Resolve", "src":  "/img/skills/artist/davinci.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Hitfilm", "src":  "/img/skills/artist/hitfilm.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Video editing and postproduction", "src":  "/img/skills/artist/editing.svg", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Directing", "src":  "/img/skills/artist/directing.png", "rowSpan":  true, "colSpan":  false},
+      {"title":  "Sound recording", "src":  "/img/skills/artist/sound.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "Lightroom", "src":  "/img/skills/artist/lightroom.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photoshop", "src":  "/img/skills/artist/photoshop.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Cameraman", "src":  "/img/skills/artist/cameraman.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photography", "src":  "/img/skills/artist/camera.svg", "rowSpan":  false, "colSpan":  false}
     ]
   },
   "projects": {

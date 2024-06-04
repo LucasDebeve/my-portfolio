@@ -31,7 +31,7 @@ function ClickableImage({ src, alt }) {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center"
+            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50"
             onClick={closeImage}
             variants={containerVariants}
             initial="hidden"

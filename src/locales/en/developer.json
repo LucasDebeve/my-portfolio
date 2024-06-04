@@ -76,7 +76,7 @@
         "description": "During this team project, we spent several months gathering, transforming and analyzing data from Air France flights departing from Paris-Charles de Gaulle airport, as well as meteorological data from Météo France. Using interactive dashboards, we linked flight delays and cancellations at this airport with meteorological parameters such as wind, precipitation and frost.",
         "links": [
           {"title":  "Source code", "url": "", "disabled": true, "primary": true},
-          {"title":  "See more", "url": "https://grafana.bayfield.dev/d/ddfyybob20w00c/airfrance?orgId=1&refresh=10s", "disabled": false, "primary": false}
+          {"title":  "See more", "url": "https://grafana.bayfield.dev/public-dashboards/a83d3992c6c7423e9a4e9afbff479015", "disabled": false, "primary": false}
         ],
         "date": "2024",
         "skills": ["Grafana", "Python", "Docker", "Power BI", "Maria DB", "SQL", "Git"],

@@ -76,7 +76,7 @@
         "description": "Durant ce projet en équipe, nous avons pendant plusieurs mois récupéré, transformé et analysé des données de vols Air France au départ de l'aéroport Paris-Charles de Gaulle ainsi que les données de météorologique de Météo France. Grâce au dashboards intéractifs conçus, nous avons mis en relation les retards et annulation des vols de cet aéroport avec les paramètres météorolgiques tels que le vent, les précipitation et le gel.",
         "links": [
           {"title":  "Code source", "url": "", "disabled": true, "primary": true},
-          {"title":  "Voir plus", "url": "https://grafana.bayfield.dev/d/ddfyybob20w00c/airfrance?orgId=1&refresh=10s", "disabled": false, "primary": false}
+          {"title":  "Voir plus", "url": "https://grafana.bayfield.dev/public-dashboards/a83d3992c6c7423e9a4e9afbff479015", "disabled": false, "primary": false}
         ],
         "date": "2024",
         "skills": ["Grafana", "Python", "Docker", "Power BI", "Maria DB", "SQL", "Git"],

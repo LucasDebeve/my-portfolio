@@ -68,7 +68,7 @@
           {"title":  "Voir plus", "url": "", "disabled": true, "primary": false}
         ],
         "date": "En cours",
-        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "React", "Javascript", "Git"],
+        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "Figma", "React", "Javascript", "Git"],
         "image": "/img/projects/uranus.png"
       },
       {
@@ -90,7 +90,7 @@
           {"title":  "Voir plus", "url": "https://media.lucasdebeve.fr/", "disabled": false, "primary": false}
         ],
         "date": "2024",
-        "skills": ["Python", "Flask", "Docker", "CSS", "Tailwind CSS", "Git"],
+        "skills": ["Python", "Flask", "Docker", "CSS", "Figma", "Tailwind CSS", "Git"],
         "image": "/img/projects/mercury.png"
       },
       {
@@ -124,7 +124,7 @@
         ],
         "date": "2023",
         "skills": ["Javascript", "HTML", "CSS", "Git"],
-        "image": "/img/projects/amortisseur.png"
+        "image": "/img/projects/ouafnotes.png"
       }
     ]
   }

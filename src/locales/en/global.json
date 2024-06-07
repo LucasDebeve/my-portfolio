@@ -12,6 +12,10 @@
     "xp": "Experiences",
     "projects": "Projects"
   },
+  "hero": {
+    "name": "Lucas Debeve",
+    "more": "See more"
+  },
   "general": {
     "years": "years",
     "year": "year",

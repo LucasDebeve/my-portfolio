@@ -1,7 +1,11 @@
 {
+  "hero": {
+    "title": "Cinema & Video"
+  },
   "aboutMe": {
     "firstParagraph": "I'm Lucas Debeve, a 3rd year student in computer science. After studying at an engineering school specialising in aerospace, I'm now working as a computer science teacher.",
-    "secondParagraph": "I've had a passion for computing since I was 13, and started out by developing games and personal websites. Today, I develop many web applications, each responding to a specific need. I also design data visualization dashboards, previously collected and transformed."
+    "secondParagraph": "I've had a passion for computing since I was 13, and started out by developing games and personal websites. Today, I develop many web applications, each responding to a specific need. I also design data visualization dashboards, previously collected and transformed.",
+    "img": "/img/Recording%20a%20movie.svg"
   },
   "xp": {
     "title": "Experience",
@@ -53,14 +57,14 @@
     "title": "Directings",
     "list": [
       {
-        "title": "Oppenheimer 2 Feat Christopher Nolan",
-        "description": "Mystery project in production. More information to follow.",
+        "title": "La plante",
+        "description": "Project in production. More information to follow.",
         "links": [
           {"title":  "The film", "url": "", "disabled": true, "primary": true}
         ],
         "date": "In progress",
         "skills": ["Directing", "Premiere Pro", "Video editing and postproduction", "Photography"],
-        "image": "/img/projects/artist/talion.png"
+        "image": "/img/projects/artist/default-movie.jpg"
       },
       {
         "title": "Talion - TurboFilm Festival",

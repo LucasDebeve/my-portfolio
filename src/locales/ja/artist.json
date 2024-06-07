@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "title": "映画監督"
+  },
+  "aboutMe": {
+    "firstParagraph": "私はルーカス・デベーヴと申します。私は情報技術の3年生です。小さい頃から映像に興味を持ち、特に映画に情熱を注いでいます。映画は私にとって完璧な芸術に近いものであり、私たちにしか味わえない感情を呼び起こします。",
+    "secondParagraph": "そのため、ビデオ制作に取り組み、ポストプロダクションと映画理論に厳しく取り組みました。具体的には、プランニング、光学、および波の科学の価値観に重点を置いています。また、短編映画のプロジェクトに参加することで経験を積み重ねています。",
+    "img": "/img/Recording%20a%20movie.svg"
+  },
+  "xp": {
+    "title": "職務経歴",
+    "timeline": [
+      {
+        "title": "社会文化活動指導者",
+        "description": "CCGPF、CGCV",
+        "dateDeb": "04/01/2022",
+        "dateFin": "現在"
+      },
+      {
+        "title": "ブドウ収穫作業員",
+        "description": "Hermonville、51220 - 2シーズン",
+        "dateDeb": "09/01/2022",
+        "dateFin": "09/01/2022"
+      },
+      {
+        "title": "BAFAトレーナー",
+        "description": "UFCV",
+        "dateDeb": "12/26/2023",
+        "dateFin": "現在"
+      },
+      {
+        "title": "インターン開発者",
+        "description": "ランス教育庁",
+        "dateDeb": "04/07/2024",
+        "dateFin": "06/01/2024"
+      }
+    ]
+  },
+  "skills": {
+    "title": "スキル",
+    "twoRows": true,
+    "list" : [
+      {"title":  "Premiere Pro", "src":  "/img/skills/artist/premiere.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "After Effect", "src":  "/img/skills/artist/after-effect.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "DaVinci Resolve", "src":  "/img/skills/artist/davinci.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Hitfilm", "src":  "/img/skills/artist/hitfilm.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "編集とポストプロダクション", "src":  "/img/skills/artist/editing.svg", "rowSpan":  true, "colSpan":  true},
+      {"title":  "監督", "src":  "/img/skills/artist/directing.png", "rowSpan":  true, "colSpan":  false},
+      {"title":  "録音", "src":  "/img/skills/artist/sound.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "Lightroom", "src":  "/img/skills/artist/lightroom.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photoshop", "src":  "/img/skills/artist/photoshop.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "撮影", "src":  "/img/skills/artist/cameraman.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "写真撮影", "src":  "/img/skills/artist/camera.svg", "rowSpan":  false, "colSpan":  false}
+    ]
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "list": [
+      {
+        "title": "La plante",
+        "description": "製作中のプロジェクト。詳細は追ってご案内します。",
+        "links": [
+          {"title":  "映画", "url": "", "disabled": true, "primary": true}
+        ],
+        "date": "製作中",
+        "skills": ["監督", "Premiere Pro", "編集とポストプロダクション", "写真撮影"],
+        "image": "/img/projects/artist/default-movie.jpg"
+      },
+      {
+        "title": "Talion - TurboFilm Festival 2024",
+        "description": "ランスシャンパーニュ大学のSUACが主催するTurbofilmフェスティバルの一環として、私は映画Talionのチームの一員として参加しました。 このフェスティバルでは、学生が5分間の短編映画をたったの24時間で制作します。 時間とフレンドリーな雰囲気をテーマに、私たちの映画はTalionというタイトルです。",
+        "links": [
+          {"title":  "映画", "url": "https://www.youtube.com/watch?v=IfU38Na4w6k&t", "disabled": false, "primary": true},
+          {"title":  "フェスティバル", "url": "https://turbofilm-festival.univ-reims.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "2024年3月",
+        "skills": ["録音", "Premiere Pro", "編集とポストプロダクション", "撮影"],
+        "image": "/img/projects/artist/talion.jpg"
+      },
+      {
+        "title": "Attentes Vs Réalités - BUT Informatique",
+        "description": "フェスティバル「Je filme ma formation」の一環として、私はチームと共に、私の学習内容であるランスのIUTの情報技術のBUTを紹介する映画を制作しました。 このビデオは「夢VS現実」や「広告VS現実」のようなビデオにインスピレーションを受けています。 この映画は3分間で、情報技術や大学に対する考えと実際の状況を比較しています。",
+        "links": [
+          {"title":  "映画", "url": "https://www.youtube.com/watch?v=ZspYbFuXOMk", "disabled": false, "primary": true},
+          {"title":  "フェスティバル", "url": "https://jefilmemaformation.tv/", "disabled": false, "primary": false}
+        ],
+        "date": "2023年",
+        "skills": ["撮影", "Premiere Pro", "編集とポストプロダクション", "監督"],
+        "image": "/img/projects/artist/attentes-vs-realites.jpg"
+      },
+      {
+        "title": "Gomu-Gomu No Mi & Ope-Ope No Mi",
+        "description": "ワンピースの世界に触発され、私は自分の本棚をこの世界の悪魔の実のレプリカで飾ることにしました。 これらの彫刻は粘土で作られ、アクリルで塗装されています。",
+        "links": [
+        ],
+        "date": "2023年",
+        "skills": ["彫刻", "絵画"],
+        "image": "/img/projects/artist/gomu.jpg"
+      },
+      {
+        "title": "One Crunch Man",
+        "description": "「私の好きな職業を映画に撮る」フェスティバルの一環として、私はチームのポストプロダクションと編集を担当しました。 当社の映画の目的は、ゲーム開発者の職業を証言を通じて紹介することでした。 フェスティバルで課された期間は3分でしたので、私たちは予告編やティーザーのスタイルを採用することにしました。",
+        "links": [
+          {"title":  "映画", "url": "https://www.youtube.com/watch?v=yY4Ad0UQ7A0", "disabled": false, "primary": true},
+          {"title":  "フェスティバル", "url": "https://jefilmelemetierquimeplait.tv/", "disabled": false, "primary": false}
+        ],
+        "date": "2022年",
+        "skills": ["監督", "Premiere Pro", "編集とポストプロダクション"],
+        "image": "/img/projects/artist/one-crunch-man.png"
+      }
+    ]
+  }
+}

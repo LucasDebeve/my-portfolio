@@ -1,0 +1,26 @@
+{
+  "lang": "ja",
+  "country": "JP",
+  "author": "Lucas Debeveによって開発されました",
+  "tabs": {
+    "developer": "開発者モード",
+    "artist": "アーティストモード"
+  },
+  "header": {
+    "home": "ホーム",
+    "skills": "スキル",
+    "xp": "経験",
+    "projects": "プロジェクト"
+  },
+  "hero": {
+    "name": "Lucas Debeve",
+    "more": "もっと知る"
+  },
+  "general": {
+    "years": "年",
+    "year": "年",
+    "and": "と",
+    "months": "ヶ月",
+    "month": "ヶ月"
+  }
+}

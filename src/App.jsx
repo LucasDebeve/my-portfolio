@@ -29,13 +29,19 @@ function App() {
     {reference: "artist", active: false},
   ]);
 
-  const [ tab, setTab ] = useState("developer");
+  // Get the current tab in query params
+  const urlParams = new URLSearchParams(window.location.search);
+  const tabFromUrl = urlParams.get("tab") || "developer";
+
+  const [ tab, setTab ] = useState(tabFromUrl);
 
   // eslint-disable-next-line no-unused-vars
   const {t} = useTranslation([tab, "global"]);
 
   useEffect(() => {
     setTabs(tabs.map((pan) => {
+      // Update the query params
+      window.history.pushState({}, "", `?tab=${tab}`);
       pan.active = pan.reference === tab;
       return pan;
     }));
@@ -44,12 +50,11 @@ function App() {
   return (
     <>
       <Header tab={tab}/>
-      <Hero/>
+      <Hero name={t("hero.name", {ns: "global"})} title={t("hero.title")} more={t("hero.more", {ns: "global"})} />
       <Container>
         <TabsList tabs={tabs} changeTab={setTab} id="tabs"/>
         <Columns>
-          {/* TODO internationalisation des Alt */}
-          <img src="/img/Code%20typing.svg" alt="illustration d'ordinateur"/>
+          <img src={t("aboutMe.img")} alt={`illustration ${tab}`}/>
           <div className="text-sm my-auto">
             <p className="mb-3">
               &emsp;{t("aboutMe.firstParagraph")}

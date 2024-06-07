@@ -1,7 +1,11 @@
 {
+  "hero": {
+    "title": "Data Analyst & Développeur Web"
+  },
   "aboutMe": {
     "firstParagraph": "Je suis Lucas Debeve, étudiant de 3ème année en informatique. A la suite d’un parcours en école d’ingénieur spécialisée en aérospatiale, je m’oriente maintenant vers le métier d’enseignant en informatique.",
-    "secondParagraph": "Passionné par l’informatique depuis mes 13 ans, j’ai d’abord débuté mon parcours en développant des jeux et des sites web personnels. Aujourd’hui, je développe de nombreuses applications web répondant chacune à un besoin. Par ailleurs, je conçois également des dashboard de visualisation de données, préalablement récoltées et transformées."
+    "secondParagraph": "Passionné par l’informatique depuis mes 13 ans, j’ai d’abord débuté mon parcours en développant des jeux et des sites web personnels. Aujourd’hui, je développe de nombreuses applications web répondant chacune à un besoin. Par ailleurs, je conçois également des dashboard de visualisation de données, préalablement récoltées et transformées.",
+    "img": "/img/Code%20typing.svg"
   },
   "xp": {
     "title": "Expériences professionnelles",

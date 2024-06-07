@@ -1,7 +1,11 @@
 {
+  "hero": {
+    "title": "Data Analyst & Web Developer"
+  },
   "aboutMe": {
     "firstParagraph": "I'm Lucas Debeve, a 3rd year student in computer science. After studying at an engineering school specialising in aerospace, I'm now working as a computer science teacher.",
-    "secondParagraph": "I've had a passion for computing since I was 13, and started out by developing games and personal websites. Today, I develop many web applications, each responding to a specific need. I also design data visualization dashboards, previously collected and transformed."
+    "secondParagraph": "I've had a passion for computing since I was 13, and started out by developing games and personal websites. Today, I develop many web applications, each responding to a specific need. I also design data visualization dashboards, previously collected and transformed.",
+    "img": "/img/Code%20typing.svg"
   },
   "xp": {
     "title": "Experience",

@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "title": "Filmemacher"
+  },
+  "aboutMe": {
+    "firstParagraph": "Ich bin Lucas Debeve und studiere im dritten Jahr Informatik. Seit meiner Kindheit habe ich mich für audiovisuelle Medien und insbesondere für das Kino begeistert. Für mich ist das Kino die perfekte Kunst, es vermittelt Emotionen, die nur das Kino vermitteln kann.",
+    "secondParagraph": "Ich habe dann mit der Videoproduktion begonnen und mich hart in der Postproduktion und der Filmtheorie mit Planwerten, Optik und Wellenwissenschaften geübt. Außerdem sammle ich weiterhin Erfahrungen bei der Teilnahme an Kurzfilmprojekten.",
+    "img": "/img/Recording%20a%20movie.svg"
+  },
+  "xp": {
+    "title": "Berufliche Erfahrungen",
+    "timeline": [
+      {
+        "title": "Soziokultureller Animator",
+        "description": "CCGPF, CGCV",
+        "dateDeb": "04/01/2022",
+        "dateFin": "now"
+      },
+      {
+        "title": "Weinleser",
+        "description": "Hermonville, 51220 - 2 Jahre",
+        "dateDeb": "09/01/2022",
+        "dateFin": "09/01/2022"
+      },
+      {
+        "title": "BAFA-Ausbilder",
+        "description": "UFCV",
+        "dateDeb": "12/26/2023",
+        "dateFin": "now"
+      },
+      {
+        "title": "Praktikant Softwareentwickler",
+        "description": "Rektorat von Reims",
+        "dateDeb": "04/07/2024",
+        "dateFin": "06/01/2024"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Kompetenzen",
+    "twoRows": true,
+    "list" : [
+      {"title":  "Premiere Pro", "src":  "/img/skills/artist/premiere.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "After Effect", "src":  "/img/skills/artist/after-effect.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "DaVinci Resolve", "src":  "/img/skills/artist/davinci.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Hitfilm", "src":  "/img/skills/artist/hitfilm.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Schnitt und Postproduktion", "src":  "/img/skills/artist/editing.svg", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Filmregie", "src":  "/img/skills/artist/directing.png", "rowSpan":  true, "colSpan":  false},
+      {"title":  "Tonaufnahme", "src":  "/img/skills/artist/sound.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "Lightroom", "src":  "/img/skills/artist/lightroom.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Photoshop", "src":  "/img/skills/artist/photoshop.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Kameramann", "src":  "/img/skills/artist/cameraman.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Fotografie", "src":  "/img/skills/artist/camera.svg", "rowSpan":  false, "colSpan":  false}
+    ]
+  },
+  "projects": {
+    "title": "Errungenschaften",
+    "list": [
+      {
+        "title": "La plante",
+        "description": "Projekt befindet sich in der Produktion. Weitere Informationen folgen in Kürze.",
+        "links": [
+          {"title":  "Der Film", "url": "", "disabled": true, "primary": true}
+        ],
+        "date": "In Arbeit",
+        "skills": ["Filmregie", "Premiere Pro", "Schnitt und Postproduktion", "Fotografie"],
+        "image": "/img/projects/artist/default-movie.jpg"
+      },
+      {
+        "title": "Talion - TurboFilm Festival 2024",
+        "description": "Im Rahmen des vom SUAC der Université de Reims Champagne organisierten Turbofilm-Festivals hatte ich das Glück, Teil des Filmteams von Talion zu sein. Dieses Festival ermöglicht es Studenten, ihren fünfminütigen Kurzfilm in nur 24 Stunden zu drehen. Zu den Themen Zeit und Geselligkeit trägt unser Film den Titel Talion",
+        "links": [
+          {"title":  "Der Film", "url": "https://www.youtube.com/watch?v=IfU38Na4w6k&t", "disabled": false, "primary": true},
+          {"title":  "Das Festival", "url": "https://turbofilm-festival.univ-reims.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "März 2024",
+        "skills": ["Tonaufnahme", "Premiere Pro", "Schnitt und Postproduktion", "Kameramann"],
+        "image": "/img/projects/artist/talion.jpg"
+      },
+      {
+        "title": "Erwartungen vs. Realitäten - BUT Informatik",
+        "description": "Im Rahmen des Festivals „Je filme ma formation“ (Ich filme meine Ausbildung) habe ich mit meinem Team einen Film entworfen, der meine Ausbildung, d. h. den BUT Informatik an der IUT in Reims, vorstellen soll. Der Film dauert drei Minuten und vergleicht die gängigen Vorstellungen über Informatik und die Universität mit der Realität.",
+        "links": [
+          {"title":  "Der Film", "url": "https://www.youtube.com/watch?v=ZspYbFuXOMk", "disabled": false, "primary": true},
+          {"title":  "Das Festival", "url": "https://jefilmemaformation.tv/", "disabled": false, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Kameramann", "Premiere Pro", "Schnitt und Postproduktion", "Filmregie"],
+        "image": "/img/projects/artist/attentes-vs-realites.jpg"
+      },
+      {
+        "title": "Gomu-Gomu No Mi & Ope-Ope No Mi",
+        "description": "Inspiriert von der Welt von One Piece habe ich beschlossen, meine Bibliothek mit Repliken von Teufelsfrüchten aus dieser Welt zu schmücken. Diese Skulpturen sind aus Ton gefertigt und mit Acrylfarbe bemalt.",
+        "links": [
+        ],
+        "date": "2023",
+        "skills": ["Skulptur", "Malerei"],
+        "image": "/img/projects/artist/gomu.jpg"
+      },
+      {
+        "title": "One Crunch Man",
+        "description": "Im Rahmen des Festivals „Ich filme den Beruf, der mir gefällt“ war ich für die Postproduktion und den Schnitt des Films meines Teams zuständig. Ziel unseres Films war es, den Beruf des Videospielentwicklers anhand eines Erfahrungsberichts vorzustellen. Da die vom Festival vorgegebene Länge 3 Minuten betrug, entschieden wir uns für den Stil eines Trailers oder Teasers.",
+        "links": [
+          {"title":  "Der Film", "url": "https://www.youtube.com/watch?v=yY4Ad0UQ7A0", "disabled": false, "primary": true},
+          {"title":  "Das Festival", "url": "https://jefilmelemetierquimeplait.tv/", "disabled": false, "primary": false}
+        ],
+        "date": "2022",
+        "skills": ["Filmregie", "Premiere Pro", "Schnitt und Postproduktion"],
+        "image": "/img/projects/artist/one-crunch-man.png"
+      }
+    ]
+  }
+}

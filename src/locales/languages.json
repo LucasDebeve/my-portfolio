@@ -10,5 +10,9 @@
   {
     "code": "de",
     "name": "Deutsch"
+  },
+  {
+    "code": "jp",
+    "name": "日本語"
   }
 ]

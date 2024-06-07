@@ -1,0 +1,135 @@
+{
+  "hero": {
+    "title": "データアナリスト & ウェブ開発者"
+  },
+  "aboutMe": {
+    "firstParagraph": "私はLucas Debeve、情報学の3年生です。航空宇宙工学に特化した工学学校での学びの後、現在は情報学の教師を目指しています。",
+    "secondParagraph": "13歳から情報学に熱中し、最初は個人のゲームやウェブサイトを開発していました。現在では、さまざまなニーズに応える多くのウェブアプリケーションを開発しています。また、収集および変換されたデータを視覚化するためのダッシュボードも設計しています。",
+    "img": "/img/Code%20typing.svg"
+  },
+  "xp": {
+    "title": "職務経験",
+    "timeline": [
+      {
+        "title": "社会文化アニメーター",
+        "description": "CCGPF, CGCV",
+        "dateDeb": "2022/04/01",
+        "dateFin": "現在"
+      },
+      {
+        "title": "収穫者",
+        "description": "Hermonville, 51220 - 2シーズン",
+        "dateDeb": "2022/09/01",
+        "dateFin": "2022/09/01"
+      },
+      {
+        "title": "BAFAトレーナー",
+        "description": "UFCV",
+        "dateDeb": "2023/12/26",
+        "dateFin": "現在"
+      },
+      {
+        "title": "インターン開発者",
+        "description": "Rectorat de Reims",
+        "dateDeb": "2024/04/07",
+        "dateFin": "2024/06/01"
+      }
+    ]
+  },
+  "skills": {
+    "title": "スキル",
+    "twoRows": false,
+    "list" : [
+      {"title":  "SQL", "src":  "/img/skills/developer/sql.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PostgreSQL", "src":  "/img/skills/developer/postgres.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Maria DB", "src":  "/img/skills/developer/mariadb.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Python", "src":  "/img/skills/developer/python.png", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Oracle", "src":  "/img/skills/developer/oracle.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Power BI", "src":  "/img/skills/developer/powerbi.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Django", "src":  "/img/skills/developer/django.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Flask", "src":  "/img/skills/developer/flask.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Grafana", "src":  "/img/skills/developer/grafana.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Figma", "src":  "/img/skills/developer/figma.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "React", "src":  "/img/skills/developer/react.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Docker", "src":  "/img/skills/developer/docker.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Javascript", "src":  "/img/skills/developer/js.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "API Platform", "src":  "/img/skills/developer/api-platform.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Git", "src":  "/img/skills/developer/git.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PHP", "src":  "/img/skills/developer/php.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Symfony", "src":  "/img/skills/developer/symfony.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "HTML", "src":  "/img/skills/developer/html.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "CSS", "src":  "/img/skills/developer/css.webp", "rowSpan":  false, "colSpan":  false}
+    ]
+  },
+  "projects": {
+    "title": "成果物",
+    "list": [
+      {
+        "title": "Uranus",
+        "description": "このウェブアプリケーションは、生徒がオンラインコースを受講できるeラーニングプラットフォームです。教師は教育シーケンス、練習問題、プロジェクトを公開できます。生徒はコースを受講し、練習問題やプロジェクトを実施し、成績を得ることができます。",
+        "links": [
+          {"title":  "ソースコード", "url": "https://github.com/LucasDebeve/Uranus", "disabled": false, "primary": true},
+          {"title":  "詳細を見る", "url": "", "disabled": true, "primary": false}
+        ],
+        "date": "進行中",
+        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "Figma", "React", "Javascript", "Git"],
+        "image": "/img/projects/developer/uranus.png"
+      },
+      {
+        "title": "In The Air",
+        "description": "このチームプロジェクトでは、数ヶ月にわたってパリ・シャルル・ド・ゴール空港から出発するAir FranceのフライトデータとMétéo Franceの気象データを収集、変換、分析しました。作成したインタラクティブなダッシュボードを使用して、風、降水量、霜などの気象パラメータとこの空港のフライトの遅延やキャンセルの関係を示しました。",
+        "links": [
+          {"title":  "ソースコード", "url": "", "disabled": true, "primary": true},
+          {"title":  "詳細を見る", "url": "https://grafana.bayfield.dev/d/ddfyybob20w00c/airfrance?orgId=1&refresh=10s", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Grafana", "Python", "Docker", "Power BI", "Maria DB", "SQL", "Git"],
+        "image": "/img/projects/developer/intheair.png"
+      },
+      {
+        "title": "Mercury Cloud",
+        "description": "このウェブプラットフォームは、ファイルを保存し、共有するための個人的なクラウドインターフェースです。このアプリケーションは、ファイル保存の個人的なニーズに応えるために開発しました。",
+        "links": [
+          {"title":  "ソースコード", "url": "https://github.com/LucasDebeve/media-share", "disabled": false, "primary": true},
+          {"title":  "詳細を見る", "url": "https://media.lucasdebeve.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Python", "Flask", "Docker", "CSS", "Figma", "Tailwind CSS", "Git"],
+        "image": "/img/projects/developer/mercury.png"
+      },
+      {
+        "title": "Amorti'Sœur",
+        "description": "このウェブアプリケーションは、銀行のローンシミュレーションツールです。ユーザーは、金額、期間、および利子率を入力してローンをシミュレートできます。アプリケーションは、月々の支払額、ローンの総額、および償却表を返します。",
+        "links": [
+          {"title": "ソースコード", "url": "https://github.com/LucasDebeve/amortisSoeur", "disabled": false, "primary": true},
+          {"title": "詳細を見る", "url": "https://lucasdebeve.github.io/amortisSoeur/", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/developer/amortisseur.png"
+      },
+      {
+        "title": "Studease",
+        "description": "大学のプロジェクトの一環として、私はチームと共に、企業が公開したインターンシップやアルバイトの申し込みを学生が行えるウェブアプリケーションを開発しました。学生は自分の進捗状況を追跡し、企業からのフィードバックを受け取ることもできます。",
+        "links": [
+          {"title": "ソースコード", "url": "https://github.com/LucasDebeve/studease", "disabled": true, "primary": true},
+          {"title": "詳細を見る", "url": "", "disabled": true, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Symfony", "PHP", "Docker", "Maria DB", "Git"],
+        "image": "/img/projects/developer/studease.png"
+      },
+      {
+        "title": "OuafNotes",
+        "description": "このウェブアプリケーションは、Reims-Châlons-CharlevilleのIUTの学生向けの学位試験のシミュレーションツールです。成績はIUTのイントラネットからダイナミックに取得され、成績表に表示されます。学生は成績や平均点を確認し、年度の承認を確認できます。",
+        "links": [
+          {"title": "ソースコード", "url": "https://github.com/LucasDebeve/ouaf-notes", "disabled": false, "primary": true},
+          {"title": "詳細を見る", "url": "https://ouafnotes.lucasdebeve.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/developer/ouafnotes.png"
+      }
+    ]
+  }
+}

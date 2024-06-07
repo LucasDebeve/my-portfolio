@@ -29,13 +29,19 @@ function App() {
     {reference: "artist", active: false},
   ]);
 
-  const [ tab, setTab ] = useState("developer");
+  // Get the current tab in query params
+  const urlParams = new URLSearchParams(window.location.search);
+  const tabFromUrl = urlParams.get("tab") || "developer";
+
+  const [ tab, setTab ] = useState(tabFromUrl);
 
   // eslint-disable-next-line no-unused-vars
   const {t} = useTranslation([tab, "global"]);
 
   useEffect(() => {
     setTabs(tabs.map((pan) => {
+      // Update the query params
+      window.history.pushState({}, "", `?tab=${tab}`);
       pan.active = pan.reference === tab;
       return pan;
     }));

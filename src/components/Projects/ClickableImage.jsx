@@ -41,7 +41,7 @@ function ClickableImage({ src, alt }) {
             <motion.img
               src={src}
               alt={alt}
-              className="max-w-full max-h-full object-contain"
+              className="w-[80%] max-h-full object-contain"
               variants={animeVariants}
               initial="hidden"
               animate={"visible"}

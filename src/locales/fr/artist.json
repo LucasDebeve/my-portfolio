@@ -1,4 +1,7 @@
 {
+  "hero": {
+    "title": "Cinéaste"
+  },
   "aboutMe": {
     "firstParagraph": "Je suis Lucas Debeve, étudiant de 3ème année en informatique. Depuis tout petit, je suis passionné par l’audiovisuel et plus sépcifiquement par le cinéma. Pour moi, le cinéma se rapproche de l’art parfait, il fait ressentir des émotions que seul lui peut faire vivre.",
     "secondParagraph": "Je me suis alors lancé dans la création vidéo et je me suis durement entrainé à la post-production et à la théorie du cinéma, avec les valeurs de plan, l’optique et la sciences des ondes. Par ailleurs, je continue de prendre de l’expérience en prenant part à des projets de court-métrage.\n"
@@ -53,14 +56,14 @@
     "title": "Réalisations",
     "list": [
       {
-        "title": "Oppenheimer 2 Feat Christopher Nolan",
-        "description": "Projet mystère en cours de production. Plus d'informations à venir.",
+        "title": "La plante",
+        "description": "Projet en cours de production. Plus d'informations à venir.",
         "links": [
           {"title":  "Le film", "url": "", "disabled": true, "primary": true}
         ],
         "date": "En cours",
         "skills": ["Réalisation", "Premiere Pro", "Montage et post-production", "Photographie"],
-        "image": "/img/projects/artist/talion.jpg"
+        "image": "/img/projects/artist/default-movie.jpg"
       },
       {
         "title": "Talion - Festival TurboFilm 2024",

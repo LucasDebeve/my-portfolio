@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <Header tab={tab}/>
-      <Hero/>
+      <Hero name={t("hero.name", {ns: "global"})} title={t("hero.title")} more={t("hero.more", {ns: "global"})} />
       <Container>
         <TabsList tabs={tabs} changeTab={setTab} id="tabs"/>
         <Columns>

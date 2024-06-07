@@ -1,8 +1,10 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import {motion} from "framer-motion";
+import PropTypes from "prop-types";
 
-function Hero() {
+function Hero({ name= "", title= "", more = "" }) {
+
 
   const animeVariants = {
     hiddenTitle: {
@@ -30,7 +32,7 @@ function Hero() {
         transition={{duration: 1}}
         viewport={{once: true}}
       >
-        Lucas Debeve
+        {name}
       </motion.h1>
       <motion.p
         variants={animeVariants}
@@ -39,15 +41,21 @@ function Hero() {
         transition={{duration: 1}}
         viewport={{once: true}}
       >
-        Hello world !
+        {title}
       </motion.p>
       <a href="#tabs" className="absolute bottom-8 animate-bounce">
         <FontAwesomeIcon icon={faChevronDown} className="mr-5"/>
-        En savoir plus
+        {more}
         <FontAwesomeIcon icon={faChevronDown} className="ml-5"/>
       </a>
     </div>
   );
 }
+
+Hero.PropTypes = {
+  name: PropTypes.string,
+  title: PropTypes.string,
+  more: PropTypes.string
+};
 
 export default Hero;

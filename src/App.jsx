@@ -54,8 +54,7 @@ function App() {
       <Container>
         <TabsList tabs={tabs} changeTab={setTab} id="tabs"/>
         <Columns>
-          {/* TODO internationalisation des Alt */}
-          <img src="/img/Code%20typing.svg" alt="illustration d'ordinateur"/>
+          <img src={t("aboutMe.img")} alt={`illustration ${tab}`}/>
           <div className="text-sm my-auto">
             <p className="mb-3">
               &emsp;{t("aboutMe.firstParagraph")}

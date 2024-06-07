@@ -1,0 +1,26 @@
+{
+  "lang": "de",
+  "country": "DE",
+  "author": "Entwickelt von Lucas Debeve",
+  "tabs": {
+    "developer": "Entwicklermodus",
+    "artist": "Künstlermodus"
+  },
+  "header": {
+    "home": "Startseite",
+    "skills": "Fähigkeiten",
+    "xp": "Erfahrungen",
+    "projects": "Projekte"
+  },
+  "hero": {
+    "name": "Lucas Debeve",
+    "more": "Mehr erfahren"
+  },
+  "general": {
+    "years": "Jahre",
+    "year": "Jahr",
+    "and": "und",
+    "months": "Monate",
+    "month": "Monat"
+  }
+}

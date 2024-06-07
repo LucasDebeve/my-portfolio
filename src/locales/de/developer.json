@@ -1,0 +1,135 @@
+{
+  "hero": {
+    "title": "Data Analyst & Webentwickler"
+  },
+  "aboutMe": {
+    "firstParagraph": "Ich bin Lucas Debeve, ein dritter Jahr Informatikstudent. Nach einem Studium an einer Hochschule mit Schwerpunkt Luft- und Raumfahrttechnik orientiere ich mich nun auf den Beruf des Informatiklehrers.",
+    "secondParagraph": "Seit meinem 13. Lebensjahr bin ich von der Informatik begeistert und habe meine Reise begonnen, indem ich eigene Spiele und Websites entwickelte. Heute entwickle ich zahlreiche Webanwendungen, die jeweils einem bestimmten Bedarf entsprechen. Darüber hinaus erstelle ich auch Dashboards zur Datenvisualisierung, die zuvor gesammelt und transformiert wurden.",
+    "img": "/img/Code%20typing.svg"
+  },
+  "xp": {
+    "title": "Berufserfahrung",
+    "timeline": [
+      {
+        "title": "Soziokultureller Animator",
+        "description": "CCGPF, CGCV",
+        "dateDeb": "04/01/2022",
+        "dateFin": "now"
+      },
+      {
+        "title": "Weinleser",
+        "description": "Hermonville, 51220 - 2 Saisons",
+        "dateDeb": "09/01/2022",
+        "dateFin": "09/01/2022"
+      },
+      {
+        "title": "BAFA-Ausbilder",
+        "description": "UFCV",
+        "dateDeb": "12/26/2023",
+        "dateFin": "now"
+      },
+      {
+        "title": "Entwickler-Praktikant",
+        "description": "Rectorat de Reims",
+        "dateDeb": "04/07/2024",
+        "dateFin": "06/01/2024"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "twoRows": false,
+    "list" : [
+      {"title":  "SQL", "src":  "/img/skills/developer/sql.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PostgreSQL", "src":  "/img/skills/developer/postgres.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Maria DB", "src":  "/img/skills/developer/mariadb.png",  "rowSpan":  false, "colSpan":  false},
+      {"title":  "Python", "src":  "/img/skills/developer/python.png", "rowSpan":  true, "colSpan":  true},
+      {"title":  "Oracle", "src":  "/img/skills/developer/oracle.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Power BI", "src":  "/img/skills/developer/powerbi.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Django", "src":  "/img/skills/developer/django.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Flask", "src":  "/img/skills/developer/flask.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Grafana", "src":  "/img/skills/developer/grafana.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Figma", "src":  "/img/skills/developer/figma.svg", "rowSpan":  false, "colSpan":  false},
+      {"title":  "React", "src":  "/img/skills/developer/react.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Docker", "src":  "/img/skills/developer/docker.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Javascript", "src":  "/img/skills/developer/js.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "API Platform", "src":  "/img/skills/developer/api-platform.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Git", "src":  "/img/skills/developer/git.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "PHP", "src":  "/img/skills/developer/php.png", "rowSpan":  false, "colSpan":  false},
+      {"title":  "Symfony", "src":  "/img/skills/developer/symfony.png", "rowSpan":  false, "colSpan":  true},
+      {"title":  "HTML", "src":  "/img/skills/developer/html.webp", "rowSpan":  false, "colSpan":  false},
+      {"title":  "CSS", "src":  "/img/skills/developer/css.webp", "rowSpan":  false, "colSpan":  false}
+    ]
+  },
+  "projects": {
+    "title": "Projekte",
+    "list": [
+      {
+        "title": "Uranus",
+        "description": "Diese Webanwendung ist eine E-Learning-Plattform, die es Schülern ermöglicht, Online-Kurse zu verfolgen. Lehrer können pädagogische Sequenzen, Übungen und Projekte für die Schüler veröffentlichen. Letztere können die Kurse verfolgen, die Übungen und Projekte durchführen und Noten erhalten.",
+        "links": [
+          {"title":  "Quellcode", "url": "https://github.com/LucasDebeve/Uranus", "disabled": false, "primary": true},
+          {"title":  "Mehr sehen", "url": "", "disabled": true, "primary": false}
+        ],
+        "date": "Laufend",
+        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "Figma", "React", "Javascript", "Git"],
+        "image": "/img/projects/developer/uranus.png"
+      },
+      {
+        "title": "In The Air",
+        "description": "Im Rahmen dieses Teamprojekts haben wir mehrere Monate lang Daten von Air France-Flügen ab dem Flughafen Paris-Charles de Gaulle sowie Wetterdaten von Météo France gesammelt, transformiert und analysiert. Dank der interaktiven Dashboards, die wir entworfen haben, konnten wir die Verspätungen und Ausfälle der Flüge dieses Flughafens mit Wetterparametern wie Wind, Niederschlag und Frost in Beziehung setzen.",
+        "links": [
+          {"title":  "Quellcode", "url": "", "disabled": true, "primary": true},
+          {"title":  "Mehr sehen", "url": "https://grafana.bayfield.dev/d/ddfyybob20w00c/airfrance?orgId=1&refresh=10s", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Grafana", "Python", "Docker", "Power BI", "Maria DB", "SQL", "Git"],
+        "image": "/img/projects/developer/intheair.png"
+      },
+      {
+        "title": "Mercury Cloud",
+        "description": "Diese Webplattform ist eine persönliche Cloud-Schnittstelle, die es mir ermöglicht, meine Dateien zu speichern und zu teilen. Ich habe diese Anwendung entwickelt, um meinem persönlichen Bedarf an Dateispeicherung gerecht zu werden.",
+        "links": [
+          {"title":  "Quellcode", "url": "https://github.com/LucasDebeve/media-share", "disabled": false, "primary": true},
+          {"title":  "Mehr sehen", "url": "https://media.lucasdebeve.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Python", "Flask", "Docker", "CSS", "Figma", "Tailwind CSS", "Git"],
+        "image": "/img/projects/developer/mercury.png"
+      },
+      {
+        "title": "Amorti'Sœur",
+        "description": "Diese Webanwendung ist ein Werkzeug zur Simulation von Bankkrediten. Der Benutzer kann einen Kredit simulieren, indem er den Betrag, die Laufzeit und den Zinssatz angibt. Die Anwendung gibt dann die Höhe der Monatsraten, die Gesamtkosten des Kredits und den Tilgungsplan zurück.",
+        "links": [
+          {"title": "Quellcode", "url": "https://github.com/LucasDebeve/amortisSoeur", "disabled": false, "primary": true},
+          {"title": "Mehr sehen", "url": "https://lucasdebeve.github.io/amortisSoeur/", "disabled": false, "primary": false}
+        ],
+        "date": "2024",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/developer/amortisseur.png"
+      },
+      {
+        "title": "Studease",
+        "description": "Im Rahmen eines Universitätsprojekts habe ich zusammen mit meinem Team eine Webanwendung entwickelt, die es Studenten ermöglicht, sich auf Praktikums- und Ausbildungsangebote zu bewerben, die von Unternehmen veröffentlicht wurden. Die Studenten können auch den Fortschritt ihrer Bewerbung verfolgen und Feedback von den Unternehmen erhalten.",
+        "links": [
+          {"title": "Quellcode", "url": "https://github.com/LucasDebeve/studease", "disabled": true, "primary": true},
+          {"title": "Mehr sehen", "url": "", "disabled": true, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Symfony", "PHP", "Docker", "Maria DB", "Git"],
+        "image": "/img/projects/developer/studease.png"
+      },
+      {
+        "title": "OuafNotes",
+        "description": "Diese Webanwendung ist ein Tool zur Simulation von Universitätszeugnissen für die Studenten des IUT von Reims-Châlons-Charleville. Die Noten werden dynamisch aus dem Intranet des IUT abgerufen und in einem Zeugnis angezeigt. Der Student kann dann seine Noten, seinen Durchschnitt und die Validierung seines Jahresergebnisses einsehen.",
+        "links": [
+          {"title": "Quellcode", "url": "https://github.com/LucasDebeve/ouaf-notes", "disabled": false, "primary": true},
+          {"title": "Mehr sehen", "url": "https://ouafnotes.lucasdebeve.fr/", "disabled": false, "primary": false}
+        ],
+        "date": "2023",
+        "skills": ["Javascript", "HTML", "CSS", "Git"],
+        "image": "/img/projects/developer/ouafnotes.png"
+      }
+    ]
+  }
+}

@@ -65,17 +65,6 @@
     "title": "成果物",
     "list": [
       {
-        "title": "Uranus",
-        "description": "このウェブアプリケーションは、生徒がオンラインコースを受講できるeラーニングプラットフォームです。教師は教育シーケンス、練習問題、プロジェクトを公開できます。生徒はコースを受講し、練習問題やプロジェクトを実施し、成績を得ることができます。",
-        "links": [
-          {"title":  "ソースコード", "url": "https://github.com/LucasDebeve/Uranus", "disabled": false, "primary": true},
-          {"title":  "詳細を見る", "url": "", "disabled": true, "primary": false}
-        ],
-        "date": "進行中",
-        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "Figma", "React", "Javascript", "Git"],
-        "image": "/img/projects/developer/uranus.png"
-      },
-      {
         "title": "In The Air",
         "description": "このチームプロジェクトでは、数ヶ月にわたってパリ・シャルル・ド・ゴール空港から出発するAir FranceのフライトデータとMétéo Franceの気象データを収集、変換、分析しました。作成したインタラクティブなダッシュボードを使用して、風、降水量、霜などの気象パラメータとこの空港のフライトの遅延やキャンセルの関係を示しました。",
         "links": [

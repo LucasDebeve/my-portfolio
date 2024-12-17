@@ -71,17 +71,6 @@
     "title": "Projekte",
     "list": [
       {
-        "title": "Uranus",
-        "description": "Diese Webanwendung ist eine E-Learning-Plattform, die es Schülern ermöglicht, Online-Kurse zu verfolgen. Lehrer können pädagogische Sequenzen, Übungen und Projekte für die Schüler veröffentlichen. Letztere können die Kurse verfolgen, die Übungen und Projekte durchführen und Noten erhalten.",
-        "links": [
-          {"title":  "Quellcode", "url": "https://github.com/LucasDebeve/Uranus", "disabled": false, "primary": true},
-          {"title":  "Mehr sehen", "url": "", "disabled": true, "primary": false}
-        ],
-        "date": "Laufend",
-        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "Figma", "React", "Javascript", "Git"],
-        "image": "/img/projects/developer/uranus.png"
-      },
-      {
         "title": "In The Air",
         "description": "Im Rahmen dieses Teamprojekts haben wir mehrere Monate lang Daten von Air France-Flügen ab dem Flughafen Paris-Charles de Gaulle sowie Wetterdaten von Météo France gesammelt, transformiert und analysiert. Dank der interaktiven Dashboards, die wir entworfen haben, konnten wir die Verspätungen und Ausfälle der Flüge dieses Flughafens mit Wetterparametern wie Wind, Niederschlag und Frost in Beziehung setzen.",
         "links": [

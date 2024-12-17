@@ -33,6 +33,12 @@
         "description": "Rectorat de Reims",
         "dateDeb": "04/07/2024",
         "dateFin": "06/01/2024"
+      },
+      {
+        "title": "Développeur en alternance",
+        "description": "Cerfrance CNEIDF",
+        "dateDeb": "17/12/2024",
+        "dateFin": "now"
       }
     ]
   },
@@ -64,17 +70,6 @@
   "projects": {
     "title": "Réalisations",
     "list": [
-      {
-        "title": "Uranus",
-        "description": "Cette application web est une plateforme d'e-learning permettant à des élèves de suivre de cours en ligne. Les professeurs peuvent publier des séquences pédagogiques, des exercices et des projets pour les élèves. Ces derniers peuvent alors suivre les cours, réaliser les exercices et les projets et obtenir des notes.",
-        "links": [
-          {"title":  "Code source", "url": "https://github.com/LucasDebeve/Uranus", "disabled": false, "primary": true},
-          {"title":  "Voir plus", "url": "", "disabled": true, "primary": false}
-        ],
-        "date": "En cours",
-        "skills": ["Symfony", "API Platform", "PHP", "Docker", "PostgreSQL", "Figma", "React", "Javascript", "Git"],
-        "image": "/img/projects/developer/uranus.png"
-      },
       {
         "title": "In The Air",
         "description": "Durant ce projet en équipe, nous avons pendant plusieurs mois récupéré, transformé et analysé des données de vols Air France au départ de l'aéroport Paris-Charles de Gaulle ainsi que les données de météorologique de Météo France. Grâce au dashboards intéractifs conçus, nous avons mis en relation les retards et annulation des vols de cet aéroport avec les paramètres météorolgiques tels que le vent, les précipitation et le gel.",

@@ -33,6 +33,12 @@
         "description": "Rectorat de Reims",
         "dateDeb": "04/07/2024",
         "dateFin": "06/01/2024"
+      },
+      {
+        "title": "Developer in apprenticeship",
+        "description": "Cerfrance CNEIDF",
+        "dateDeb": "17/12/2024",
+        "dateFin": "now"
       }
     ]
   },

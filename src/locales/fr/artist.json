@@ -3,7 +3,7 @@
     "title": "Cinéaste"
   },
   "aboutMe": {
-    "firstParagraph": "Je suis Lucas Debeve, étudiant de 3ème année en informatique. Depuis tout petit, je suis passionné par l’audiovisuel et plus sépcifiquement par le cinéma. Pour moi, le cinéma se rapproche de l’art parfait, il fait ressentir des émotions que seul lui peut faire vivre.",
+    "firstParagraph": "Je suis Lucas Debeve, étudiant de 3ème année en informatique. Depuis tout petit, je suis passionné par l’audiovisuel et plus spécifiquement par le cinéma. Pour moi, le cinéma se rapproche de l’art parfait, il fait ressentir des émotions que seul lui peut faire vivre.",
     "secondParagraph": "Je me suis alors lancé dans la création vidéo et je me suis durement entrainé à la post-production et à la théorie du cinéma, avec les valeurs de plan, l’optique et la sciences des ondes. Par ailleurs, je continue de prendre de l’expérience en prenant part à des projets de court-métrage.",
     "img": "/img/Recording%20a%20movie.svg"
   },
@@ -33,6 +33,12 @@
         "description": "Rectorat de Reims",
         "dateDeb": "04/07/2024",
         "dateFin": "06/01/2024"
+      },
+      {
+        "title": "Développeur en alternance",
+        "description": "Cerfrance CNEIDF",
+        "dateDeb": "17/12/2024",
+        "dateFin": "now"
       }
     ]
   },
